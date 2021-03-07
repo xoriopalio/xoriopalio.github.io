@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generative art on Το Χωριό Παλιό</title>
+    <link>https://xoriopalio.github.io/tags/generative-art/</link>
+    <description>Recent content in generative art on Το Χωριό Παλιό</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>igoumeninja@gmail.com (Aris &amp; Katerina)</managingEditor>
+    <webMaster>igoumeninja@gmail.com (Aris &amp; Katerina)</webMaster>
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xoriopalio.github.io/tags/generative-art/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Live Visuals @ Χωριό Παλιό</title>
+      <link>https://xoriopalio.github.io/post/the/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/post/the/</guid>
+      <description>https://unsplash.com/photos/SVwOposMxHY</description>
+    </item>
+    
+    <item>
+      <title>The Game of Life</title>
+      <link>https://xoriopalio.github.io/post/the-game-of-life/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/post/the-game-of-life/</guid>
+      <description>Finally! I have been trying to start a dev blog for like 10 years now, and I always found a way to procrastinate that 😩. I always thought I would never have the time or enough content to publish, and with how fast technology becomes outdated, it seemed inappropriate at the time. On the other hand, I always have been an enthusiast of generative artwork or algorithmic art, and I thought: &amp;ldquo;Hey, that never goes old!</description>
+    </item>
+    
+  </channel>
+</rss>
