@@ -1,11 +1,14 @@
 
 function setup() {
-    createCanvas(180, 120);
-    frameRate(10);
+    createCanvas(280, 220);
+    frameRate(30);
 }
 
 function draw() {
-    ellipse(20,20,20,20);
+    fill(255,30);
+    //rect(0,0,width,height);
+    fill(0,50);
+    ellipse(random(0,480), random(0,200),5,5);
 }
 
 function mousePressed() {
