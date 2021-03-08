@@ -5,9 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>p5.js</title>
-  <meta property="og:title" content="p5.js" />
-  <meta name="twitter:title" content="p5.js" />
+  <title>p5.js sound</title>
+  <meta property="og:title" content="p5.js sound" />
+  <meta name="twitter:title" content="p5.js sound" />
+  <meta name="description" content="    ">
+  <meta property="og:description" content="    ">
+  <meta name="twitter:description" content="    ">
   <meta name="author" content="Aris &amp; Katerina"/>
   <link href='https://xoriopalio.github.io/favicon/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://xoriopalio.github.io/img/avatar-icon.png" />
@@ -15,13 +18,13 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@xoriopalio" />
   <meta name="twitter:creator" content="@xoriopalio" />
-  <meta property="og:url" content="https://xoriopalio.github.io/categories/p5.js/" />
+  <meta property="og:url" content="https://xoriopalio.github.io/post/sound-sample-p5-js/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Το Χωριό Παλιό" />
 
   <meta name="generator" content="Hugo 0.68.3" />
-  <link rel="canonical" href="https://xoriopalio.github.io/categories/p5.js/" />
-  <link rel="alternate" href="https://xoriopalio.github.io/categories/p5.js/index.xml" type="application/rss+xml" title="Το Χωριό Παλιό">
+  <link rel="canonical" href="https://xoriopalio.github.io/post/sound-sample-p5-js/" />
+  <link rel="alternate" href="https://xoriopalio.github.io/index.xml" type="application/rss+xml" title="Το Χωριό Παλιό">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -195,38 +198,185 @@ if (!doNotTrack) {
 
 
     
-<header class="header-section ">
-  <div class="intro-header no-img">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="page-heading">
-            <h1>#p5.js</h1>
-            <hr class="small">
+<head>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10773558-19', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-10773558-19', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+
+  
+  
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>p5.js sound</h1>
+                
+                
+                  <span class="post-meta">
+
+  
+</span>
+
+                
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+
 
     
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+
+<div class="sketch">
+    <div class="sketch-container">
+        <iframe id="p5-sound-js" class="sketch-iframe p5-iframe" sandbox="allow-scripts allow-same-origin" srcdoc="
+  &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            html, body {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            main, .p5Canvas {
+                width: 100% !important;
+                height: 100% !important;
+                display: block;
+                image-rendering: pixelated;
+            }
+        &lt;/style&gt;
+        &lt;script src=&#34;https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js&#34;&gt;&lt;/script&gt;
+        &lt;script src=&#34;https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/addons/p5.sound.js&#34;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            
+    let monoSynth;
+
+function setup() {
+    let cnv = createCanvas(330, 160);
+    cnv.mousePressed(playSynth);
+    background(220);
+    //textAlign(CENTER);
+    text(&#39;tap to play&#39;, width/2, height/4);
+
+    monoSynth = new p5.MonoSynth();
+}
+
+
+
+function playSynth() {
+    userStartAudio();
+
+    let note = random([&#39;Fb4&#39;, &#39;G4&#39;]);
+    // note velocity (volume, from 0 to 1)
+    let velocity = random();
+    // time from now (in seconds)
+    let time = 0;
+    // note duration (in seconds)
+    let dur = 1/6;
+
+    monoSynth.play(note, velocity, time, dur);
+}
+
+  
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+" onload="resize(this)" scrolling="no" frameborder="0"></iframe>
+    </div>
+</div>
+
+
+      </article>
+      <hr>
+      <b>created at</b>: February 18, 2021
+      <br>
+      <b>tags</b>: [
       
-      <div class="posts-list">
+      <span class="post-meta">
         
-        <li><a href="https://xoriopalio.github.io/post/live-visual-at-xoriopalio/">Live Visuals @ Χωριό Παλιό</a></li>
+        #<a href="https://xoriopalio.github.io/tags/p5.js/">p5.js</a>&nbsp;
         
-        <li><a href="https://xoriopalio.github.io/post/sound-p5-js/">p5.js sound</a></li>
+        #<a href="https://xoriopalio.github.io/tags/generative-art/">generative art</a>&nbsp;
         
-        <li><a href="https://xoriopalio.github.io/post/sound-sample-p5-js/">p5.js sound</a></li>
-        
-        <li><a href="https://xoriopalio.github.io/post/the-game-of-life/">The Game of Life</a></li>
-        
-      </div>
+      </span>
       
+      ]
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xoriopalio-gitlab-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+        
+      
+
     </div>
   </div>
 </div>
@@ -272,7 +422,7 @@ if (!doNotTrack) {
           
           <li>
             
-            <a href="https://xoriopalio.github.io/categories/p5.js/index.xml" title="RSS">
+            <a href="https://xoriopalio.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
