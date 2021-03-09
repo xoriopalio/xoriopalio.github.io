@@ -1,14 +1,15 @@
-let box, drum, myPart;
+let dum, tek, myPart;
 let dumPat = [1,0,0,0,1,0,0,0];
 let tekPat = [0,0,1,1,0,0,1,0];
 
-let button1, button2;
+let button1, button2, button3;
 let slider;
 
 function preload() {
+    createCanvas(200,200);
     soundFormats('mp3', 'ogg');
     dum = loadSound('frameDrum');
-    tek = loadSound('gonga');
+    tek = loadSound('gongaE');
 }
 
 function setup() {
@@ -23,20 +24,18 @@ function setup() {
     myPart.addPhrase(tekPhrase);
     myPart.setBPM(40);
 
-    button1 = createButton('loop'); button1.position(0, 20); button1.mousePressed(loopKey);
+    button1 = createButton('play'); button1.position(0, 20); button1.mousePressed(playKey);
     button2 = createButton('stop'); button2.position(0, 50); button2.mousePressed(noLoopKey);
+    button3 = createButton('bpm:'); button3.position(0, 80); button3.mousePressed(bpmKey);
     
-    slider = createSlider(30, 180, 40,1);
-    slider.position(0, 80);
+    slider = createSlider(30, 180, 40, 1);
+    slider.position(80, 85);
     slider.style('width', '80px');
 }
 
-function draw() {
-    background(255);
-    myPart.setBPM(slider.value());
-    text('bpm:'+ slider.value(),30,33);
-}
+function draw() { myPart.setBPM(slider.value()); text('bpm:'+ slider.value(),60,60); }
 function playDum( time, playbackRate) { dum.rate(playbackRate); dum.play(time); }
 function playTek( time, playbackRate) { tek.rate(playbackRate); tek.play(time); }
-function loopKey() { userStartAudio(); myPart.start(); myPart.loop(); }
+function playKey() { userStartAudio(); myPart.start(); myPart.loop(); }
 function noLoopKey() { myPart.noLoop(); }
+function bpmKey() {  }
