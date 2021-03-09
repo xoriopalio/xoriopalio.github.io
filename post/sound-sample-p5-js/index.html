@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>p5.js sound</title>
-  <meta property="og:title" content="p5.js sound" />
-  <meta name="twitter:title" content="p5.js sound" />
+  <title>p5.js sound sample</title>
+  <meta property="og:title" content="p5.js sound sample" />
+  <meta name="twitter:title" content="p5.js sound sample" />
   <meta name="description" content="    ">
   <meta property="og:description" content="    ">
   <meta name="twitter:description" content="    ">
@@ -246,7 +246,7 @@ if (!doNotTrack) {
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>p5.js sound</h1>
+              <h1>p5.js sound sample</h1>
                 
                 
                   <span class="post-meta">
@@ -296,32 +296,23 @@ if (!doNotTrack) {
     &lt;body&gt;
         &lt;script&gt;
             
-    let monoSynth;
-
-function setup() {
-    let cnv = createCanvas(330, 160);
-    cnv.mousePressed(playSynth);
-    background(220);
-    //textAlign(CENTER);
-    text(&#39;tap to play&#39;, width/2, height/4);
-
-    monoSynth = new p5.MonoSynth();
+    let mySound;
+function preload() {
+    soundFormats(&#39;mp3&#39;, &#39;ogg&#39;);
+    mySound = loadSound(&#39;ntefi&#39;);
 }
 
+function setup() {
+    let cnv = createCanvas(100, 100);
+    cnv.mousePressed(canvasPressed);
+    background(220);
+    text(&#39;tap here to play&#39;, 10, 20);
+}
 
-
-function playSynth() {
-    userStartAudio();
-
-    let note = random([&#39;Fb4&#39;, &#39;G4&#39;]);
-    // note velocity (volume, from 0 to 1)
-    let velocity = random();
-    // time from now (in seconds)
-    let time = 0;
-    // note duration (in seconds)
-    let dur = 1/6;
-
-    monoSynth.play(note, velocity, time, dur);
+function canvasPressed() {
+    // playing a sound file on a user gesture
+    // is equivalent to `userStartAudio()`
+    mySound.play();
 }
 
   

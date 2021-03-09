@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Αντριάνα</title>
-  <meta property="og:title" content="Αντριάνα" />
-  <meta name="twitter:title" content="Αντριάνα" />
-  <meta name="description" content=" Όνομα Μητρός: Ντολόρες Όνομα Πατρός: Μανώλης Χιώτης Ημερομηνία Γέννησης: [2016-12-01 Πεμ]  &#34; /   ">
-  <meta property="og:description" content=" Όνομα Μητρός: Ντολόρες Όνομα Πατρός: Μανώλης Χιώτης Ημερομηνία Γέννησης: [2016-12-01 Πεμ]  &#34; /   ">
-  <meta name="twitter:description" content=" Όνομα Μητρός: Ντολόρες Όνομα Πατρός: Μανώλης Χιώτης Ημερομηνία Γέννησης: [2016-12-01 Πεμ]  &#34; /   ">
+  <title>p5.js sound score part</title>
+  <meta property="og:title" content="p5.js sound score part" />
+  <meta name="twitter:title" content="p5.js sound score part" />
+  <meta name="description" content="    ">
+  <meta property="og:description" content="    ">
+  <meta name="twitter:description" content="    ">
   <meta name="author" content="Aris &amp; Katerina"/>
   <link href='https://xoriopalio.github.io/favicon/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://xoriopalio.github.io/img/avatar-icon.png" />
@@ -18,12 +18,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@xoriopalio" />
   <meta name="twitter:creator" content="@xoriopalio" />
-  <meta property="og:url" content="https://xoriopalio.github.io/post/adriana/" />
+  <meta property="og:url" content="https://xoriopalio.github.io/post/sound-score-part/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Το Χωριό Παλιό" />
 
   <meta name="generator" content="Hugo 0.68.3" />
-  <link rel="canonical" href="https://xoriopalio.github.io/post/adriana/" />
+  <link rel="canonical" href="https://xoriopalio.github.io/post/sound-score-part/" />
   <link rel="alternate" href="https://xoriopalio.github.io/index.xml" type="application/rss+xml" title="Το Χωριό Παλιό">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -246,7 +246,7 @@ if (!doNotTrack) {
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Αντριάνα</h1>
+              <h1>p5.js sound score part</h1>
                 
                 
                   <span class="post-meta">
@@ -268,30 +268,98 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <ul>
-<li>Όνομα Μητρός: Ντολόρες</li>
-<li>Όνομα Πατρός: Μανώλης Χιώτης</li>
-<li>Ημερομηνία Γέννησης: <span class="timestamp-wrapper"><span class="timestamp">[2016-12-01 Πεμ]</span></span></li>
-</ul>
-<div class="org-center">
-<div class="HTML">
-<img src="<https://www.dropbox.com/s/543s4uo1w7u87nh/antriana.png?raw=1>" />
+        
+
+
+<div class="sketch">
+    <div class="sketch-container">
+        <iframe id="p5-sound-js" class="sketch-iframe p5-iframe" sandbox="allow-scripts allow-same-origin" srcdoc="
+  &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            html, body {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            main, .p5Canvas {
+                width: 100% !important;
+                height: 100% !important;
+                display: block;
+                image-rendering: pixelated;
+            }
+        &lt;/style&gt;
+        &lt;script src=&#34;https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js&#34;&gt;&lt;/script&gt;
+        &lt;script src=&#34;https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/addons/p5.sound.js&#34;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            
+    let box, drum, myPart;
+let dumPat = [1,0,0,0,1,0,0,0];
+let tekPat = [0,0,1,1,0,0,1,0];
+
+let button1, button2;
+let slider;
+
+function preload() {
+    soundFormats(&#39;mp3&#39;, &#39;ogg&#39;);
+    dum = loadSound(&#39;frameDrum&#39;);
+    tek = loadSound(&#39;gonga&#39;);
+}
+
+function setup() {
+    background(255);
+    textSize(6);
+    fill(0);
+    
+    let dumPhrase = new p5.Phrase(&#39;dum&#39;, playDum, dumPat);
+    let tekPhrase = new p5.Phrase(&#39;tek&#39;, playTek, tekPat);
+    myPart = new p5.Part();
+    myPart.addPhrase(dumPhrase);
+    myPart.addPhrase(tekPhrase);
+    myPart.setBPM(40);
+
+    button1 = createButton(&#39;loop&#39;); button1.position(0, 20); button1.mousePressed(loopKey);
+    button2 = createButton(&#39;stop&#39;); button2.position(0, 50); button2.mousePressed(noLoopKey);
+    
+    slider = createSlider(30, 180, 40,1);
+    slider.position(0, 80);
+    slider.style(&#39;width&#39;, &#39;80px&#39;);
+}
+
+function draw() {
+    background(255);
+    myPart.setBPM(slider.value());
+    text(&#39;bpm:&#39;&#43; slider.value(),30,33);
+}
+function playDum( time, playbackRate) { dum.rate(playbackRate); dum.play(time); }
+function playTek( time, playbackRate) { tek.rate(playbackRate); tek.play(time); }
+function loopKey() { userStartAudio(); myPart.start(); myPart.loop(); }
+function noLoopKey() { myPart.noLoop(); }
+
+  
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+" onload="resize(this)" scrolling="no" frameborder="0"></iframe>
+    </div>
 </div>
-</div>
+
 
       </article>
       <hr>
-      <b>created at</b>: September 25, 2017
+      <b>created at</b>: February 18, 2021
       <br>
       <b>tags</b>: [
       
       <span class="post-meta">
         
-        #<a href="https://xoriopalio.github.io/tags/%CF%80%CF%81%CF%8C%CE%B2%CE%B1%CF%84%CE%B1/">πρόβατα</a>&nbsp;
+        #<a href="https://xoriopalio.github.io/tags/p5.js/">p5.js</a>&nbsp;
         
-        #<a href="https://xoriopalio.github.io/tags/%CE%B1%CE%BD%CF%84%CF%81%CE%B9%CE%AC%CE%BD%CE%BD%CE%B1/">αντριάννα</a>&nbsp;
-        
-        #<a href="https://xoriopalio.github.io/tags/sheep-id-pass/">sheep-id-pass</a>&nbsp;
+        #<a href="https://xoriopalio.github.io/tags/generative-art/">generative art</a>&nbsp;
         
       </span>
       
