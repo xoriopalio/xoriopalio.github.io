@@ -1,6 +1,6 @@
 
 function setup() {
-    createCanvas(480, 220);
+    createCanvas(500, 500);
     frameRate(30);
 }
 
@@ -12,5 +12,5 @@ function draw() {
 }
 
 function mousePressed() {
-
+    
 }

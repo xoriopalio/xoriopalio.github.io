@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>210313 sketch</title>
+      <link>https://xoriopalio.github.io/post/210313-sketch/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/post/210313-sketch/</guid>
+      <description>199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238  // ... this the code fro p5.js. Yoy can also test it at ..............  let x,y,r=0,f=0,ratio = 200; let slider; function setup() { createCanvas(600,300); background(255);  //stroke(0,253);  //text(&amp;#34;sketching is relaxing&amp;#34;,0,20); } function draw() { //text(&amp;#34;sketching is relaxing&amp;#34;,0,20);  //fill(255,50);  //rect(-10,-10, width+20, height+20);  f=f+TWO_PI/ratio;  r=r+0.</description>
+    </item>
+    
+    <item>
+      <title>Υγρή κουτσουλιά</title>
+      <link>https://xoriopalio.github.io/post/ygri-koutsoulia/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/post/ygri-koutsoulia/</guid>
+      <description>Table of Contents  [2021-03-12 Παρ]: Επιτεύχθει η μετάγγιση του μαύρου υγρού χρυσού που βρωμάει όσο και το κύκλωμα πίσω απο τον χρυσό.  </description>
+    </item>
+    
+    <item>
       <title>Ροδιές</title>
       <link>https://xoriopalio.github.io/post/rodies/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
@@ -62,7 +80,8 @@
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
       <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
       <guid>https://xoriopalio.github.io/post/alkyonides-ston-khpo-patata-arakas-skorda-kremmydia/</guid>
-      <description> 5κιλά πατάτα Marabel Με όπισθεν ανοίγω αυλάκι για πατάτα Ενάμιση κιλό κροκάρι και 10 κεφάλια σκόρδα.  pic.twitter.com/zr41OD4QnE
+      <description>Click me
+ 5κιλά πατάτα Marabel Με όπισθεν ανοίγω αυλάκι για πατάτα Ενάμιση κιλό κροκάρι και 10 κεφάλια σκόρδα.  pic.twitter.com/zr41OD4QnE
 &amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) February 21, 2021  pic.twitter.com/INDDdqzdq1
 &amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) February 21, 2021  10 κεφάλια σκόρδο, 4.3€
 1.5κγ κρεμμύδια 4€ pic.twitter.com/pYYegRA4qA
@@ -476,19 +495,6 @@ pic.twitter.com/1o9bQnBnnf
     </item>
     
     <item>
-      <title>Δενρδολίβανος και Λεβάντα</title>
-      <link>https://xoriopalio.github.io/post/dendrolivanos_kai_levanta/</link>
-      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
-      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
-      <guid>https://xoriopalio.github.io/post/dendrolivanos_kai_levanta/</guid>
-      <description>Η λεβάντα μπήκε σε αργιλώδες χώμα και ο δενδρολίβανοσ σε αφράτο.
-pic.twitter.com/H0culfsz4n
-&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 30, 2018  pic.twitter.com/BfD92q4qnH
-&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 28, 2018  pic.twitter.com/QwZKFkjres
-&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 16, 2018  </description>
-    </item>
-    
-    <item>
       <title>Βελέντζες</title>
       <link>https://xoriopalio.github.io/post/velentzes/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
@@ -496,6 +502,19 @@ pic.twitter.com/H0culfsz4n
       <guid>https://xoriopalio.github.io/post/velentzes/</guid>
       <description>pic.twitter.com/NFINryPYvN
 &amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 19, 2018  </description>
+    </item>
+    
+    <item>
+      <title>Δενρδολίβανος και Λεβάντα</title>
+      <link>https://xoriopalio.github.io/post/dendrolivanos_kai_levanta/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/post/dendrolivanos_kai_levanta/</guid>
+      <description> [2021-03-13 Σαβ]: Θέλει ένα χρόνο για να δέσεις καλή ρίζα.  Η λεβάντα μπήκε σε αργιλώδες χώμα και ο δενδρολίβανοσ σε αφράτο.
+pic.twitter.com/H0culfsz4n
+&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 30, 2018  pic.twitter.com/BfD92q4qnH
+&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 28, 2018  pic.twitter.com/QwZKFkjres
+&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) October 16, 2018  </description>
     </item>
     
     <item>
@@ -2002,7 +2021,7 @@ pic.twitter.com/riKf12WCc8
       <pubDate>Sat, 04 Jun 2016 00:00:00 +0000</pubDate>
       <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
       <guid>https://xoriopalio.github.io/post/lipansi/</guid>
-      <description>Απαραίτητη η λίπανση για όλους μας έτσι και για τα φυτά. Αυτοί που ασχολούνται γνωρίζουν το κωδικό NPK (Nitrogen, Phosphorous, and K, Potassium). Είναι ορισμένα απο τα στοιχεία που πρέπει να έχει η λίπανση. Βέβαια, η κύρια παραγωγή λιπασμάτων είναι χημική, αλλα μπορεί να γίνει και οργανική. Εμείς εδώ προσπαθούμε να φτιάξουμε ένα οικοσύστημα το οποίο να παράγει αυτά που χρειάζεται και αυτό μπορεί να γίνει μόνο οργανικά. Οπότε τσόφλια απο αυγά και σπασμένα κοχύλια για ασβέστιο, και άλλα κόλπα που αναλύονται παρακάτω.</description>
+      <description>Table of Contents  Απαραίτητη η λίπανση για όλους μας έτσι και για τα φυτά. Αυτοί που ασχολούνται γνωρίζουν το κωδικό NPK (Nitrogen, Phosphorous, and K, Potassium). Είναι ορισμένα απο τα στοιχεία που πρέπει να έχει η λίπανση. Βέβαια, η κύρια παραγωγή λιπασμάτων είναι χημική, αλλα μπορεί να γίνει και οργανική. Εμείς εδώ προσπαθούμε να φτιάξουμε ένα οικοσύστημα το οποίο να παράγει αυτά που χρειάζεται και αυτό μπορεί να γίνει μόνο οργανικά.</description>
     </item>
     
     <item>

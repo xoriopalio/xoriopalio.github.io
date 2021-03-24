@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>igoumeninja@gmail.com (Aris &amp; Katerina)</managingEditor>
     <webMaster>igoumeninja@gmail.com (Aris &amp; Katerina)</webMaster>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xoriopalio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>generative art</title>
+      <link>https://xoriopalio.github.io/tags/generative-art/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/tags/generative-art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>p5.js</title>
+      <link>https://xoriopalio.github.io/tags/p5.js/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
+      <guid>https://xoriopalio.github.io/tags/p5.js/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>δένδρα</title>
@@ -162,24 +180,6 @@
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
       <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
       <guid>https://xoriopalio.github.io/tags/automaton/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>generative art</title>
-      <link>https://xoriopalio.github.io/tags/generative-art/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
-      <guid>https://xoriopalio.github.io/tags/generative-art/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>p5.js</title>
-      <link>https://xoriopalio.github.io/tags/p5.js/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
-      <guid>https://xoriopalio.github.io/tags/p5.js/</guid>
       <description></description>
     </item>
     
