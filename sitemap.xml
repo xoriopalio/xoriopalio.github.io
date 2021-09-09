@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://xoriopalio.github.io/post/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/tags/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/post/o-septebrios-tou-21/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/tags/%CE%B6%CE%B1%CF%81%CE%B6%CE%B1%CE%B2%CE%B1%CF%84%CE%B9%CE%BA%CE%AC/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/tags/%CE%BA%CE%B7%CF%80%CE%BF%CF%85%CF%81%CE%B9%CE%BA%CE%AE/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/post/ntomata/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/tags/%CE%BD%CF%84%CE%BF%CE%BC%CE%AC%CF%84%CE%B1/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xoriopalio.github.io/post/210313-sketch/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url>
@@ -24,16 +59,6 @@
   
   <url>
     <loc>https://xoriopalio.github.io/categories/p5.js/</loc>
-    <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xoriopalio.github.io/post/</loc>
-    <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xoriopalio.github.io/tags/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -109,11 +134,6 @@
   
   <url>
     <loc>https://xoriopalio.github.io/tags/%CE%B1%CE%BB%CE%BB%CE%B5%CF%81%CE%B3%CE%AF%CE%B5%CF%82/</loc>
-    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xoriopalio.github.io/tags/%CE%BA%CE%AE%CF%80%CE%BF%CF%85%CF%81%CE%B9%CE%BA%CE%AE/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -228,11 +248,6 @@
   </url>
   
   <url>
-    <loc>https://xoriopalio.github.io/tags/%CE%BA%CE%B7%CF%80%CE%BF%CF%85%CF%81%CE%B9%CE%BA%CE%AE/</loc>
-    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xoriopalio.github.io/tags/%CE%BC%CE%B5%CF%84%CE%B1%CF%86%CF%8D%CF%84%CE%B5%CF%85%CF%83%CE%B7/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url>
@@ -243,17 +258,17 @@
   </url>
   
   <url>
+    <loc>https://xoriopalio.github.io/post/fytorio21/</loc>
+    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xoriopalio.github.io/tags/%CF%83%CF%80%CE%BF%CF%81%CE%B5%CE%AF%CE%B1/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xoriopalio.github.io/tags/%CF%86%CF%85%CF%84%CF%8E%CF%81%CE%B9%CE%B1/</loc>
-    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xoriopalio.github.io/post/fytorio21/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -473,11 +488,6 @@
   </url>
   
   <url>
-    <loc>https://xoriopalio.github.io/tags/%CE%B6%CE%B1%CF%81%CE%B6%CE%B1%CE%B2%CE%B1%CF%84%CE%B9%CE%BA%CE%AC/</loc>
-    <lastmod>2018-11-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xoriopalio.github.io/post/moloha-gerani/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
   </url>
@@ -508,11 +518,6 @@
   </url>
   
   <url>
-    <loc>https://xoriopalio.github.io/post/velentzes/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xoriopalio.github.io/post/dendrolivanos_kai_levanta/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
   </url>
@@ -524,6 +529,11 @@
   
   <url>
     <loc>https://xoriopalio.github.io/tags/%CE%B2%CE%B5%CE%BB%CE%AD%CE%BD%CF%84%CE%B6%CE%B1/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/post/velentzes/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -548,17 +558,17 @@
   </url>
   
   <url>
+    <loc>https://xoriopalio.github.io/tags/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1/</loc>
+    <lastmod>2018-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xoriopalio.github.io/post/books-to-buy/</loc>
     <lastmod>2018-10-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xoriopalio.github.io/post/h-vivliothiki-mas/</loc>
-    <lastmod>2018-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xoriopalio.github.io/tags/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1/</loc>
     <lastmod>2018-10-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -943,17 +953,7 @@
   </url>
   
   <url>
-    <loc>https://xoriopalio.github.io/post/sos-tsedar/</loc>
-    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xoriopalio.github.io/post/tarta-fraoulas/</loc>
-    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xoriopalio.github.io/post/fakes/</loc>
     <lastmod>2018-01-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -963,12 +963,22 @@
   </url>
   
   <url>
-    <loc>https://xoriopalio.github.io/post/rizogalo/</loc>
+    <loc>https://xoriopalio.github.io/tags/%CF%83%CE%AC%CE%BB%CF%84%CF%83%CE%B5%CF%82/</loc>
     <lastmod>2018-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xoriopalio.github.io/tags/%CF%83%CE%AC%CE%BB%CF%84%CF%83%CE%B5%CF%82/</loc>
+    <loc>https://xoriopalio.github.io/post/sos-tsedar/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/post/fakes/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xoriopalio.github.io/post/rizogalo/</loc>
     <lastmod>2018-01-13T00:00:00+00:00</lastmod>
   </url>
   
