@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Το Χωριό Παλιό" />
 
-  <meta name="generator" content="Hugo 0.68.3" />
+  <meta name="generator" content="Hugo 0.92.2" />
   <link rel="canonical" href="https://xoriopalio.github.io/post/the-game-of-life/" />
   <link rel="alternate" href="https://xoriopalio.github.io/index.xml" type="application/rss+xml" title="Το Χωριό Παλιό">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -213,7 +213,6 @@ if (!doNotTrack) {
 }
 </script>
 
-
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -269,9 +268,9 @@ if (!doNotTrack) {
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Finally! I have been trying to start a dev blog for like 10 years now, and I always found a way to procrastinate that 😩.
-I always thought I would never have the time or enough content to publish, and with how fast technology becomes outdated, it seemed inappropriate at the time. On the other hand, I always have been an enthusiast of generative artwork or algorithmic art, and I thought: &ldquo;Hey, that never goes old!&quot;, so this time around at least I got to the blog creation part, the first post and a path to learn a lot.</p>
+I always thought I would never have the time or enough content to publish, and with how fast technology becomes outdated, it seemed inappropriate at the time. On the other hand, I always have been an enthusiast of generative artwork or algorithmic art, and I thought: &ldquo;Hey, that never goes old!&rdquo;, so this time around at least I got to the blog creation part, the first post and a path to learn a lot.</p>
 <p>Usually the first thing you do when you start something technology related, has to be a <em>Hello World</em> of some sort. I enjoy writing Go or Javascript code, so I would love to just do something like&hellip;</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 
 <span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello Blog!&#34;</span><span class="p">)</span>
@@ -306,7 +305,7 @@ I always thought I would never have the time or enough content to publish, and w
 <p>p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.</p>
 </blockquote>
 <p>Every sketch starts the same, with 2 required functions <code>setup</code> and <code>draw</code>, aside from that, everything else is just plain old javascript and everything is fair game, let&rsquo;s start by doing our <code>setup</code> and have some arrays to store the state of our cells.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">size</span><span class="p">;</span>             <span class="c1">// simplify code
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">size</span><span class="p">;</span>             <span class="c1">// simplify code
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">next</span><span class="p">;</span>      <span class="c1">// current and next generation
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>       <span class="c1">// color for live cells
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">dead</span> <span class="o">=</span>   <span class="mi">0</span><span class="p">;</span>       <span class="c1">// color for dead cells
@@ -318,7 +317,7 @@ I always thought I would never have the time or enough content to publish, and w
   <span class="nx">next</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">size</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div><p>Instead of using boolean arrays already, let&rsquo;s start by using integers and define the actual value of the color of dead or live cells, in this case <code>255</code> or white for live ones, and <code>0</code> or black for dead ones. This also has the nice side effect that 0 evaluates to false in javascript, but declaring them in a variable will make the code a lot more readable and will let us change colors later on if we want to. We also declared <code>size</code> as a shortcut for <code>width * height</code>, it will save a lot of calculations in the long run, but it&rsquo;s mainly for cleaner code too. We create our state arrays of length <code>size</code> and fill them with <code>dead</code> cells. We will be going back and forth between 1D and 2D coordinates, so let&rsquo;s review the conversions:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// From 2D(x, y) to 1D(i)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// From 2D(x, y) to 1D(i)
 </span><span class="c1"></span><span class="nx">i</span> <span class="p">=</span> <span class="nx">y</span> <span class="o">*</span> <span class="nx">width</span> <span class="o">+</span> <span class="nx">x</span>
 
 <span class="c1">// From 1D(i) to 2D(x, y)
@@ -326,7 +325,7 @@ I always thought I would never have the time or enough content to publish, and w
 <span class="nx">y</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span>
 </code></pre></div><p>In a 1D array, we store each row(y) of pixels one after the other, so we need to always use the width to know when each of those rows end and the next one begins. Conversions are very straightforward, but it&rsquo;s worth noting that depending on the language and platform, one has to be careful that <code>y</code> might be a floating point number, and we can only index arrays with <code>integer</code> numbers, so let&rsquo;s be careful and move on. One thing to note about 1D arrays, is that they are already toroidally bound (of sorts 😅) on the x axis! That means that for <code>x == width</code> if we do <code>x + 1</code>, what usually would be an <code>out of bounds</code> error on 2D arrays, in a 1D array, we just get the first item of the next row (on the other side of the screen). Not perfect but it will be good enough for this use case, we will bound the y axis later on too.</p>
 <p>The next step would be seeding our initial state with random live cells. In a 2D array we could simply iterate over it and randomly set the cell state, but this will always give us approximately 50% of live/dead cells each time (just like flipping a coin). With 1D arrays on the other hand, we can define a percentage of live cells to seed our initial state, then generate that percentage of random numbers between <code>0</code> and <code>size</code> and use them as index to set those cells to a live state. Definitely faster, simpler and more flexible. Declare our <code>percentage</code> at the top and create our seed function.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Randomly seeds the state with live cells
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Randomly seeds the state with live cells
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">seed</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">state</span><span class="p">.</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
   <span class="kr">const</span> <span class="nx">living</span> <span class="o">=</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">size</span> <span class="o">*</span> <span class="nx">percentage</span> <span class="o">/</span> <span class="mi">100</span><span class="p">);</span>
@@ -336,7 +335,7 @@ I always thought I would never have the time or enough content to publish, and w
 <span class="p">}</span>
 </code></pre></div><p>We make sure the state is filled with dead cells before seeding just in case we want to re-seed mid game (restart). As we can see, seeding a <code>%</code> of the state with live cells is way easier in 1D arrays. Quick note, the <code>random()</code> function in p5.js has many modes. When called with a single parameter, it will produce a number between <code>0</code> (inclusive) and that number (exclusive), but this number is a <code>float</code>, so we need to round it down to use as an index.</p>
 <p>Next, just add a <code>seed()</code> call at the end of our setup, and we are ready to draw our cells into the canvas to see that we seeded correctly. Let&rsquo;s write our draw function next, in will also be very simple thanks to our decisions so far.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">set</span><span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">color</span><span class="p">(</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]));</span>
@@ -346,7 +345,7 @@ I always thought I would never have the time or enough content to publish, and w
 </span><span class="c1"></span><span class="p">}</span>
 </code></pre></div><p>That&rsquo;s it! Single loop and single call to set the color of the cell based on our current state. The <code>set(x, y, color)</code> function is very easy to use. We just transform our 1D coordinates into 2D inline and we don&rsquo;t even have to fix <code>y</code> because the the canvas does not care, it can take floating numbers as coordinates and will just interpolate the best possible way. One thing to note here is that we must call <code>updatePixels()</code> once we are done setting our pixel data so that it renders the whole screen again. Finally we are using the <code>color()</code> function, which also has a lot of modes, so make sure to <a href="https://p5js.org/reference/#/p5/color">check it out</a> so we can just change our colors later on.</p>
 <p>Last but not least, our <code>step()</code> function, here is where the magic happens, we iterate through our current state, apply Conway&rsquo;s rules and create a new generation of cells. We will do this over and over, and this will be <em><em>The Game of Life!</em></em> Before we proceed, let&rsquo;s review how do we access neighbours in a 1D array, as it might not be that intuitive after all. We need to check the status of all 8 adjacent cells to find out what to do with our current cell.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// These are really simple and straight forward
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// These are really simple and straight forward
 </span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>            <span class="c1">// west
 </span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>            <span class="c1">// east
 </span><span class="c1">// If we go one width back, we are actually moving &#39;up&#39;
@@ -359,7 +358,7 @@ I always thought I would never have the time or enough content to publish, and w
 </span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// southwest
 </span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// southeast
 </span></code></pre></div><p>From the code above we can see that for each <code>offset</code> only <code>i</code> is a variable, and we can treat the rest as a constant, let&rsquo;s optimize here and calculate the constant part and put them in an array so we can iterate over those faster later on. Declare <code>offsets</code> at the top and initialize it inside <code>setup</code> once the <code>width</code> is known.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">offset</span> <span class="o">=</span> <span class="p">[</span>      <span class="c1">// offsets for neighbours in 1D array
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">offset</span> <span class="o">=</span> <span class="p">[</span>      <span class="c1">// offsets for neighbours in 1D array
 </span><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// nw
 </span><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span><span class="p">,</span>     <span class="c1">// n
 </span><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// ne
@@ -370,14 +369,14 @@ I always thought I would never have the time or enough content to publish, and w
 </span><span class="c1"></span>    <span class="o">-</span><span class="mi">1</span><span class="p">,</span>         <span class="c1">// w
 </span><span class="c1"></span><span class="p">];</span>
 </code></pre></div><p>One last thing before we proceed with <code>step()</code>, let&rsquo;s do a helper function <code>at(i)</code> that will tell us if the cell is <em>dead or alive</em> for any given position in the current state, and while we are at it, let&rsquo;s bound the <code>y</code> axis toroidally altogether.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Gets cell &#39;status&#39; at a given index (1D)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Gets cell &#39;status&#39; at a given index (1D)
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">at</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>     <span class="nx">i</span> <span class="o">+=</span> <span class="nx">size</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&gt;=</span> <span class="nx">size</span><span class="p">)</span> <span class="nx">i</span> <span class="o">-=</span> <span class="nx">size</span><span class="p">;</span>
   <span class="k">return</span> <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><p>What is happening here? As we only care about two bounds, if <code>index &lt; 0</code> we add <code>size</code> to it essentially moving the index to the last row <code>y</code> in the same <code>x</code> position. Comparable to that, if <code>index &gt; size</code> we move it to the first row <code>y</code> by subtracting <code>size</code> from it. We then return <code>0</code> if it&rsquo;s dead or <code>1</code> if it&rsquo;s live, as we do not care about the actual color value of the state, but just the status for calculating the number of neighbours. Now, for the last part&hellip;</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Creates the next generation of cells
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Creates the next generation of cells
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">step</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">let</span> <span class="nx">neighbours</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -501,7 +500,7 @@ function mousePressed() {
 </div>
 
 <p>Great! 😁 The initial state is randomly seeded with 25% live cells, and then we let the game follow it&rsquo;s course. But there is no fun in just watching it a single time, so you can click on  or anywhere on the canvas to re-seed the state and restart the game. This usually runs much faster, specially for the canvas size we picked as it&rsquo;s very small, but I used <code>frameRate(10)</code> in our setup so that each step in time could be appreciated. You can click on on the sketch toolbar to check the code in Github. If you try this code in the <a href="https://editor.p5js.org/">p5.js web editor</a>, you will notice that the sketch is really small, exactly the way we defined it in the <code>setup</code> with <code>createCanvas(180, 120)</code>, as we are actually using pixels! Your first impulse would be to change the size and make the canvas bigger, but that will not scale the pixels, you are just going to have a lot more cells to deal with. That is why most people implement <em>The Game of Life</em> by drawing squares or so, but the trick here, is that the browser already has the ability to scale the <code>canvas</code> element regardless of it&rsquo;s size! So while embedding sketches in my blog I&rsquo;m using&hellip;</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">main</span><span class="o">,</span> <span class="p">.</span><span class="nc">p5Canvas</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">main</span><span class="o">,</span> <span class="p">.</span><span class="nc">p5Canvas</span> <span class="p">{</span>
     <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
     <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
     <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
@@ -509,7 +508,7 @@ function mousePressed() {
 <span class="p">}</span>
 </code></pre></div><p>&hellip; essentially overriding p5.js style and making the canvas scale to the content, it also makes it responsive if we also scale the <code>iframe</code> (try resizing the browser). Neat! One attribute is apparently not supported in Firefox (at the time of writing) and that is <code>image-rendering: pixelated</code>. What it does, is essentially disabling interpolation while scaling our canvas, so our little pixels don&rsquo;t blur out and look like perfect squares when scaled up! You can read all about it in the <a href="https://developer.mozilla.org/es/docs/Web/CSS/image-rendering">MDN Web Docs</a>.</p>
 <p>But, what if we wanted to implement it in a large canvas with colors and figures like everyone else? This is about generative art after all. There is not much art in diminutive black and white pixels dancing around a canvas (or&hellip; is there? 🤔). Thankfully the way we implemented this version makes it incredibly easy to play and create different versions of the game. Let&rsquo;s start by doing some changes in our setup and variables. I will only show the meaningful changes, as always the full code is available on Github.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>      <span class="c1">// Use booleans as we don&#39;t need to store
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>      <span class="c1">// Use booleans as we don&#39;t need to store
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">dead</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>     <span class="c1">// the color, it&#39;s calculated on draw
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">resolution</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>  <span class="c1">// To create a virtual grid on top the canvas
 </span><span class="c1"></span>
@@ -522,7 +521,7 @@ function mousePressed() {
   <span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div><p>So first we grow the canvas to a comfortable viewing size, and we define a <code>resolution</code> to &ldquo;scale down&rdquo; our grid, in this example our <code>state</code> of cells will be of <code>128 * 72</code>, which is a good enough grid to play with. Then as we will not be using the <code>state</code> to store the color anymore, we just change dead and live to <code>booleans</code> as originally intended (yes, the rest of the code will work without a hitch). <code>noStroke()</code> disables the stroke when figure drawing, as we will be using those now. After that, we redefine our <code>width</code> and <code>height</code> values to those scaled by our resolution, this will not change tha canvas already created, but now our whole sketch will use these. Finally let&rsquo;s modify our <code>draw</code> function and have a little fun with it.</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">clear</span><span class="p">();</span>
   <span class="nx">background</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -670,7 +669,7 @@ function at(i) {
 </div>
 
 <p>Bravo! I separated <code>cell</code> into a new function to add a bit more fun to <em>The Game of Life</em>, now instead of re-seeding randomly by clicking on the canvas, it actually seeds new cells manually! Try it, just press the mouse button and draw some live cells directly to the current generation while it remains <code>paused</code>. Now it&rsquo;s way more fun to play with it. To achieve this, we simply modify <code>draw()</code> like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">mouseY</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">)</span> <span class="o">*</span> <span class="nx">width</span> <span class="o">+</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">mouseX</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">);</span>
@@ -794,7 +793,7 @@ function at(i) {
           
 
           &nbsp;&bull;&nbsp;
-          2021
+          2022
 
           
             &nbsp;&bull;&nbsp;
@@ -803,7 +802,7 @@ function at(i) {
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.68.3</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>
