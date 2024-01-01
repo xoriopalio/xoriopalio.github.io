@@ -5,17 +5,15 @@
     <link>https://xoriopalio.github.io/tags/automaton/</link>
     <description>Recent content in automaton on Το Χωριό Παλιό</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>igoumeninja@gmail.com (Aris &amp; Katerina)</managingEditor>
-    <webMaster>igoumeninja@gmail.com (Aris &amp; Katerina)</webMaster>
-    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xoriopalio.github.io/tags/automaton/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xoriopalio.github.io/tags/automaton/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Game of Life</title>
       <link>https://xoriopalio.github.io/post/the-game-of-life/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <author>igoumeninja@gmail.com (Aris &amp; Katerina)</author>
       <guid>https://xoriopalio.github.io/post/the-game-of-life/</guid>
       <description>Finally! I have been trying to start a dev blog for like 10 years now, and I always found a way to procrastinate that 😩. I always thought I would never have the time or enough content to publish, and with how fast technology becomes outdated, it seemed inappropriate at the time. On the other hand, I always have been an enthusiast of generative artwork or algorithmic art, and I thought: &amp;ldquo;Hey, that never goes old!</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,42 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
+    
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>The Game of Life</title>
-  <meta property="og:title" content="The Game of Life" />
-  <meta name="twitter:title" content="The Game of Life" />
+ 
+
+
+      <title>The Game of Life - </title>
+
   <meta name="description" content="Hello blog! Introduction to p5.js and cellular automata with Conway&#39;s Game of Life.">
-  <meta property="og:description" content="Hello blog! Introduction to p5.js and cellular automata with Conway&#39;s Game of Life.">
+  <meta name="author" content="Aris"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Το Χωριό Παλιό",
+    
+    "url": "https:\/\/xoriopalio.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/xoriopalio.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/xoriopalio.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/xoriopalio.github.io\/post\/the-game-of-life\/",
+          "name": "The game of life"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Guillermo Estrada"
+  },
+  "headline": "The Game of Life",
+  "description" : "Hello blog! Introduction to p5.js and cellular automata with Conway\u0027s Game of Life.",
+  "inLanguage" : "en",
+  "wordCount":  3870 ,
+  "datePublished" : "2021-02-18T00:00:00",
+  "dateModified" : "2021-02-18T00:00:00",
+  "image" : "https:\/\/xoriopalio.github.io\/img\/avatar-icon.png",
+  "keywords" : [ "p5.js, generative art, automaton" ],
+  "mainEntityOfPage" : "https:\/\/xoriopalio.github.io\/post\/the-game-of-life\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/xoriopalio.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/xoriopalio.github.io\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="The Game of Life" />
+<meta property="og:description" content="Hello blog! Introduction to p5.js and cellular automata with Conway&#39;s Game of Life.">
+<meta property="og:image" content="https://xoriopalio.github.io/img/avatar-icon.png" />
+<meta property="og:url" content="https://xoriopalio.github.io/post/the-game-of-life/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Το Χωριό Παλιό" />
+
+  <meta name="twitter:title" content="The Game of Life" />
   <meta name="twitter:description" content="Hello blog! Introduction to p5.js and cellular automata with Conway&#39;s Game of Life.">
-  <meta name="author" content="Aris &amp; Katerina"/>
-  <link href='https://xoriopalio.github.io/favicon/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://xoriopalio.github.io/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://xoriopalio.github.io/img/avatar-icon.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@xoriopalio" />
   <meta name="twitter:creator" content="@xoriopalio" />
-  <meta property="og:url" content="https://xoriopalio.github.io/post/the-game-of-life/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Το Χωριό Παλιό" />
-
-  <meta name="generator" content="Hugo 0.92.2" />
-  <link rel="canonical" href="https://xoriopalio.github.io/post/the-game-of-life/" />
-  <link rel="alternate" href="https://xoriopalio.github.io/index.xml" type="application/rss+xml" title="Το Χωριό Παλιό">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://xoriopalio.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link href='https://xoriopalio.github.io/favicon/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.121.1">
+  <link rel="alternate" href="https://xoriopalio.github.io/index.xml" type="application/rss+xml" title="Το Χωριό Παλιό"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://xoriopalio.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://xoriopalio.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://xoriopalio.github.io/css/codeblock.css" />
+  <link rel="stylesheet" href="https://xoriopalio.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://xoriopalio.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10773558-19', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://xoriopalio.github.io">Το Χωριό Παλιό</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Αναζήτηση" href="/post/archive/">Αναζήτηση</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Αρχείο</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/archive-list/">Αρχείο βάση ημερομηνία προσθήκης</a>
+                
+                  <a href="/post/archive_alphabetically/">Αρχείο με αλφαβητική σειρά</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Λέξεις Κλειδιά" href="/post/tagcloud/">Λέξεις Κλειδιά</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Κατηγορίες</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/sporeio-2018">Κηπουρική</a>
+                
+                  <a href="/post/vino-gyras">Κρασάκι</a>
+                
+                  <a href="/tags/%ce%b2%ce%b9%ce%b2%ce%bb%ce%af%ce%b1">Βιβλία</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Μαγειρική</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/h-mageiriki-sto-xorio-palio/">Η Μαγειρική στο Χωριό Παλιό</a>
+                
+                  <a href="/tags/%CE%BA%CF%81%CE%AD%CE%B1%CF%84%CE%B1/">Κρέατα</a>
+                
+                  <a href="/tags/%CF%88%CE%AC%CF%81%CE%B9%CE%B1/">Ψάρια</a>
+                
+                  <a href="/tags/%CE%BB%CE%B1%CF%87%CE%B1%CE%BD%CE%B9%CE%BA%CE%AC/">Λαχανικά</a>
+                
+                  <a href="/tags/%CF%83%CE%BF%CF%8D%CF%80%CE%B5%CF%82/">Σούπες</a>
+                
+                  <a href="/tags/%CF%8C%CF%83%CF%80%CF%81%CE%B9%CE%B1/">Όσπρια</a>
+                
+                  <a href="/tags/%CE%B6%CF%85%CE%BC%CE%B1%CF%81%CE%B9%CE%BA%CE%AC/">Ζυμαρικά</a>
+                
+                  <a href="/tags/%CF%80%CE%AF%CF%84%CE%B5%CF%82/">Πίτες</a>
+                
+                  <a href="/tags/%CF%83%CE%B1%CE%BB%CE%AC%CF%84%CE%B5%CF%82/">Σαλάτες</a>
+                
+                  <a href="/tags/%CE%B1%CE%BB%CE%BF%CE%B9%CF%86%CE%AD%CF%82/">Αλοιφές</a>
+                
+                  <a href="/tags/%CF%83%CE%AC%CE%BB%CF%84%CF%83%CE%B5%CF%82/">Σάλτσες</a>
+                
+                  <a href="/tags/%CE%B3%CE%BB%CF%85%CE%BA%CE%AC/">Γλυκά</a>
+                
+              </div>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Το Χωριό Παλιό" href="https://xoriopalio.github.io">
+            <img class="avatar-img" src="https://xoriopalio.github.io/img/avatar-icon.png" alt="Το Χωριό Παλιό" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
+    
 
 
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -83,154 +276,12 @@
     </div>
 </div>
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10773558-19', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
-
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://xoriopalio.github.io">Το Χωριό Παλιό</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-        
-          
-            <li>
-              <a title="Αναζήτηση" href="/post/archive/">Αναζήτηση</a>
-            </li>
-          
-        
-          
-            <li class="navlinks-container">
-              <a class="navlinks-parent" href="javascript:void(0)">Αρχείο</a>
-              <div class="navlinks-children">
-                
-                  <a href="/post/archive-list/">Αρχείο βάση ημερομηνία προσθήκης</a>
-                
-                  <a href="/post/archive_alphabetically/">Αρχείο με αλφαβητική σειρά</a>
-                
-              </div>
-            </li>
-          
-        
-          
-            <li>
-              <a title="Λέξεις Κλειδιά" href="/post/tagcloud/">Λέξεις Κλειδιά</a>
-            </li>
-          
-        
-          
-            <li class="navlinks-container">
-              <a class="navlinks-parent" href="javascript:void(0)">Κατηγορίες</a>
-              <div class="navlinks-children">
-                
-                  <a href="/post/sporeio-2018">Κηπουρική</a>
-                
-                  <a href="/post/vino-gyras">Κρασάκι</a>
-                
-                  <a href="/tags/%ce%b2%ce%b9%ce%b2%ce%bb%ce%af%ce%b1">Βιβλία</a>
-                
-              </div>
-            </li>
-          
-        
-          
-            <li class="navlinks-container">
-              <a class="navlinks-parent" href="javascript:void(0)">Μαγειρική</a>
-              <div class="navlinks-children">
-                
-                  <a href="/post/h-mageiriki-sto-xorio-palio/">Η Μαγειρική στο Χωριό Παλιό</a>
-                
-                  <a href="/tags/%CE%BA%CF%81%CE%AD%CE%B1%CF%84%CE%B1/">Κρέατα</a>
-                
-                  <a href="/tags/%CF%88%CE%AC%CF%81%CE%B9%CE%B1/">Ψάρια</a>
-                
-                  <a href="/tags/%CE%BB%CE%B1%CF%87%CE%B1%CE%BD%CE%B9%CE%BA%CE%AC/">Λαχανικά</a>
-                
-                  <a href="/tags/%CF%83%CE%BF%CF%8D%CF%80%CE%B5%CF%82/">Σούπες</a>
-                
-                  <a href="/tags/%CF%8C%CF%83%CF%80%CF%81%CE%B9%CE%B1/">Όσπρια</a>
-                
-                  <a href="/tags/%CE%B6%CF%85%CE%BC%CE%B1%CF%81%CE%B9%CE%BA%CE%AC/">Ζυμαρικά</a>
-                
-                  <a href="/tags/%CF%80%CE%AF%CF%84%CE%B5%CF%82/">Πίτες</a>
-                
-                  <a href="/tags/%CF%83%CE%B1%CE%BB%CE%AC%CF%84%CE%B5%CF%82/">Σαλάτες</a>
-                
-                  <a href="/tags/%CE%B1%CE%BB%CE%BF%CE%B9%CF%86%CE%AD%CF%82/">Αλοιφές</a>
-                
-                  <a href="/tags/%CF%83%CE%AC%CE%BB%CF%84%CF%83%CE%B5%CF%82/">Σάλτσες</a>
-                
-                  <a href="/tags/%CE%B3%CE%BB%CF%85%CE%BA%CE%AC/">Γλυκά</a>
-                
-              </div>
-            </li>
-          
-        
-
-        
-
-        
-      </ul>
-    </div>
-
-</nav>
-
-
-
-
-    
-<head>
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-10773558-19', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10773558-19', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
-
-
 
   
   
   
+
+
 
 
 
@@ -239,26 +290,45 @@ if (!doNotTrack) {
 
   <header class="header-section ">
     
+    
     <div class="intro-header no-img">
-      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>The Game of Life</h1>
-                
-                
-                  <span class="post-meta">
-
+              
+                <h1>The Game of Life</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 18, 2021
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;19&nbsp;minutes
+  
+  
+  
+    
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Guillermo Estrada
+      
+    
+  
   
 </span>
 
-                
+
+              
             </div>
           </div>
         </div>
       </div>
     </div>
+  
   </header>
 
 
@@ -270,12 +340,12 @@ if (!doNotTrack) {
         <p>Finally! I have been trying to start a dev blog for like 10 years now, and I always found a way to procrastinate that 😩.
 I always thought I would never have the time or enough content to publish, and with how fast technology becomes outdated, it seemed inappropriate at the time. On the other hand, I always have been an enthusiast of generative artwork or algorithmic art, and I thought: &ldquo;Hey, that never goes old!&rdquo;, so this time around at least I got to the blog creation part, the first post and a path to learn a lot.</p>
 <p>Usually the first thing you do when you start something technology related, has to be a <em>Hello World</em> of some sort. I enjoy writing Go or Javascript code, so I would love to just do something like&hellip;</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
-
-<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello Blog!&#34;</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div><p>&hellip; and be done with it!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello Blog!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>&hellip; and be done with it!</p>
 <p>But this time, I would like to do something related to generative art, as this blog is going to track all the progress and projects I do regarding that adventure (among any other dev related stuff here and there). For that purpose, an appropriate first project was necessary, and after very little deliberation, what a better place to start than with <em>Conway&rsquo;s The Game of Life</em>! It is sort of the <em>Hello World</em> of generative art after all. (isn&rsquo;t it? 😅)</p>
 <h4 id="introduction">Introduction</h4>
 <p>For those of us who thought <em>The Game of Life</em> or just <em>Life</em> for short, was an <a href="https://en.wikipedia.org/wiki/The_Game_of_Life">old family board game created by Milton Bradley</a>, we need a little bit more of an introduction to <em>Conway&rsquo;s Game of Life</em>, so directly from it&rsquo;s <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia article</a>:</p>
@@ -305,92 +375,92 @@ I always thought I would never have the time or enough content to publish, and w
 <p>p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.</p>
 </blockquote>
 <p>Every sketch starts the same, with 2 required functions <code>setup</code> and <code>draw</code>, aside from that, everything else is just plain old javascript and everything is fair game, let&rsquo;s start by doing our <code>setup</code> and have some arrays to store the state of our cells.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">size</span><span class="p">;</span>             <span class="c1">// simplify code
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">next</span><span class="p">;</span>      <span class="c1">// current and next generation
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>       <span class="c1">// color for live cells
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">dead</span> <span class="o">=</span>   <span class="mi">0</span><span class="p">;</span>       <span class="c1">// color for dead cells
-</span><span class="c1"></span>
-<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="mi">120</span><span class="p">);</span>
-  <span class="nx">size</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">*</span> <span class="nx">height</span><span class="p">;</span>
-  <span class="nx">state</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">size</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
-  <span class="nx">next</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">size</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><p>Instead of using boolean arrays already, let&rsquo;s start by using integers and define the actual value of the color of dead or live cells, in this case <code>255</code> or white for live ones, and <code>0</code> or black for dead ones. This also has the nice side effect that 0 evaluates to false in javascript, but declaring them in a variable will make the code a lot more readable and will let us change colors later on if we want to. We also declared <code>size</code> as a shortcut for <code>width * height</code>, it will save a lot of calculations in the long run, but it&rsquo;s mainly for cleaner code too. We create our state arrays of length <code>size</code> and fill them with <code>dead</code> cells. We will be going back and forth between 1D and 2D coordinates, so let&rsquo;s review the conversions:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// From 2D(x, y) to 1D(i)
-</span><span class="c1"></span><span class="nx">i</span> <span class="p">=</span> <span class="nx">y</span> <span class="o">*</span> <span class="nx">width</span> <span class="o">+</span> <span class="nx">x</span>
-
-<span class="c1">// From 1D(i) to 2D(x, y)
-</span><span class="c1"></span><span class="nx">x</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span>
-<span class="nx">y</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span>
-</code></pre></div><p>In a 1D array, we store each row(y) of pixels one after the other, so we need to always use the width to know when each of those rows end and the next one begins. Conversions are very straightforward, but it&rsquo;s worth noting that depending on the language and platform, one has to be careful that <code>y</code> might be a floating point number, and we can only index arrays with <code>integer</code> numbers, so let&rsquo;s be careful and move on. One thing to note about 1D arrays, is that they are already toroidally bound (of sorts 😅) on the x axis! That means that for <code>x == width</code> if we do <code>x + 1</code>, what usually would be an <code>out of bounds</code> error on 2D arrays, in a 1D array, we just get the first item of the next row (on the other side of the screen). Not perfect but it will be good enough for this use case, we will bound the y axis later on too.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">size</span><span class="p">;</span>             <span class="c1">// simplify code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">next</span><span class="p">;</span>      <span class="c1">// current and next generation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>       <span class="c1">// color for live cells
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">dead</span> <span class="o">=</span>   <span class="mi">0</span><span class="p">;</span>       <span class="c1">// color for dead cells
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="mi">120</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">size</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">*</span> <span class="nx">height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">state</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">size</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">next</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">size</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Instead of using boolean arrays already, let&rsquo;s start by using integers and define the actual value of the color of dead or live cells, in this case <code>255</code> or white for live ones, and <code>0</code> or black for dead ones. This also has the nice side effect that 0 evaluates to false in javascript, but declaring them in a variable will make the code a lot more readable and will let us change colors later on if we want to. We also declared <code>size</code> as a shortcut for <code>width * height</code>, it will save a lot of calculations in the long run, but it&rsquo;s mainly for cleaner code too. We create our state arrays of length <code>size</code> and fill them with <code>dead</code> cells. We will be going back and forth between 1D and 2D coordinates, so let&rsquo;s review the conversions:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// From 2D(x, y) to 1D(i)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">i</span> <span class="p">=</span> <span class="nx">y</span> <span class="o">*</span> <span class="nx">width</span> <span class="o">+</span> <span class="nx">x</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// From 1D(i) to 2D(x, y)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">x</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span>
+</span></span><span class="line"><span class="cl"><span class="nx">y</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span>
+</span></span></code></pre></div><p>In a 1D array, we store each row(y) of pixels one after the other, so we need to always use the width to know when each of those rows end and the next one begins. Conversions are very straightforward, but it&rsquo;s worth noting that depending on the language and platform, one has to be careful that <code>y</code> might be a floating point number, and we can only index arrays with <code>integer</code> numbers, so let&rsquo;s be careful and move on. One thing to note about 1D arrays, is that they are already toroidally bound (of sorts 😅) on the x axis! That means that for <code>x == width</code> if we do <code>x + 1</code>, what usually would be an <code>out of bounds</code> error on 2D arrays, in a 1D array, we just get the first item of the next row (on the other side of the screen). Not perfect but it will be good enough for this use case, we will bound the y axis later on too.</p>
 <p>The next step would be seeding our initial state with random live cells. In a 2D array we could simply iterate over it and randomly set the cell state, but this will always give us approximately 50% of live/dead cells each time (just like flipping a coin). With 1D arrays on the other hand, we can define a percentage of live cells to seed our initial state, then generate that percentage of random numbers between <code>0</code> and <code>size</code> and use them as index to set those cells to a live state. Definitely faster, simpler and more flexible. Declare our <code>percentage</code> at the top and create our seed function.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Randomly seeds the state with live cells
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">seed</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">state</span><span class="p">.</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
-  <span class="kr">const</span> <span class="nx">living</span> <span class="o">=</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">size</span> <span class="o">*</span> <span class="nx">percentage</span> <span class="o">/</span> <span class="mi">100</span><span class="p">);</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span><span class="nx">living</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">state</span><span class="p">[</span><span class="nx">floor</span><span class="p">(</span><span class="nx">random</span><span class="p">(</span><span class="nx">size</span><span class="p">))]</span> <span class="o">=</span> <span class="nx">live</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>We make sure the state is filled with dead cells before seeding just in case we want to re-seed mid game (restart). As we can see, seeding a <code>%</code> of the state with live cells is way easier in 1D arrays. Quick note, the <code>random()</code> function in p5.js has many modes. When called with a single parameter, it will produce a number between <code>0</code> (inclusive) and that number (exclusive), but this number is a <code>float</code>, so we need to round it down to use as an index.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Randomly seeds the state with live cells
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">seed</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">state</span><span class="p">.</span><span class="nx">fill</span><span class="p">(</span><span class="nx">dead</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">living</span> <span class="o">=</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">size</span> <span class="o">*</span> <span class="nx">percentage</span> <span class="o">/</span> <span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span><span class="nx">living</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">state</span><span class="p">[</span><span class="nx">floor</span><span class="p">(</span><span class="nx">random</span><span class="p">(</span><span class="nx">size</span><span class="p">))]</span> <span class="o">=</span> <span class="nx">live</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>We make sure the state is filled with dead cells before seeding just in case we want to re-seed mid game (restart). As we can see, seeding a <code>%</code> of the state with live cells is way easier in 1D arrays. Quick note, the <code>random()</code> function in p5.js has many modes. When called with a single parameter, it will produce a number between <code>0</code> (inclusive) and that number (exclusive), but this number is a <code>float</code>, so we need to round it down to use as an index.</p>
 <p>Next, just add a <code>seed()</code> call at the end of our setup, and we are ready to draw our cells into the canvas to see that we seeded correctly. Let&rsquo;s write our draw function next, in will also be very simple thanks to our decisions so far.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">set</span><span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">color</span><span class="p">(</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]));</span>
-  <span class="p">}</span>
-  <span class="nx">updatePixels</span><span class="p">();</span>
-  <span class="c1">// step(); // Here we will create the next generation
-</span><span class="c1"></span><span class="p">}</span>
-</code></pre></div><p>That&rsquo;s it! Single loop and single call to set the color of the cell based on our current state. The <code>set(x, y, color)</code> function is very easy to use. We just transform our 1D coordinates into 2D inline and we don&rsquo;t even have to fix <code>y</code> because the the canvas does not care, it can take floating numbers as coordinates and will just interpolate the best possible way. One thing to note here is that we must call <code>updatePixels()</code> once we are done setting our pixel data so that it renders the whole screen again. Finally we are using the <code>color()</code> function, which also has a lot of modes, so make sure to <a href="https://p5js.org/reference/#/p5/color">check it out</a> so we can just change our colors later on.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Main rendering loop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">set</span><span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">color</span><span class="p">(</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">updatePixels</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// step(); // Here we will create the next generation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>That&rsquo;s it! Single loop and single call to set the color of the cell based on our current state. The <code>set(x, y, color)</code> function is very easy to use. We just transform our 1D coordinates into 2D inline and we don&rsquo;t even have to fix <code>y</code> because the the canvas does not care, it can take floating numbers as coordinates and will just interpolate the best possible way. One thing to note here is that we must call <code>updatePixels()</code> once we are done setting our pixel data so that it renders the whole screen again. Finally we are using the <code>color()</code> function, which also has a lot of modes, so make sure to <a href="https://p5js.org/reference/#/p5/color">check it out</a> so we can just change our colors later on.</p>
 <p>Last but not least, our <code>step()</code> function, here is where the magic happens, we iterate through our current state, apply Conway&rsquo;s rules and create a new generation of cells. We will do this over and over, and this will be <em><em>The Game of Life!</em></em> Before we proceed, let&rsquo;s review how do we access neighbours in a 1D array, as it might not be that intuitive after all. We need to check the status of all 8 adjacent cells to find out what to do with our current cell.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// These are really simple and straight forward
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>            <span class="c1">// west
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>            <span class="c1">// east
-</span><span class="c1">// If we go one width back, we are actually moving &#39;up&#39;
-</span><span class="c1">// a row, same goes for down, we add a width...
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">width</span><span class="p">]</span>        <span class="c1">// north 
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span><span class="p">]</span>        <span class="c1">// south
-</span><span class="c1">// The rest is just a simple combination of all of them
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// northwest
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// northeast
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// southwest
-</span><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// southeast
-</span></code></pre></div><p>From the code above we can see that for each <code>offset</code> only <code>i</code> is a variable, and we can treat the rest as a constant, let&rsquo;s optimize here and calculate the constant part and put them in an array so we can iterate over those faster later on. Declare <code>offsets</code> at the top and initialize it inside <code>setup</code> once the <code>width</code> is known.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">offset</span> <span class="o">=</span> <span class="p">[</span>      <span class="c1">// offsets for neighbours in 1D array
-</span><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// nw
-</span><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span><span class="p">,</span>     <span class="c1">// n
-</span><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// ne
-</span><span class="c1"></span>    <span class="mi">1</span><span class="p">,</span>          <span class="c1">// e
-</span><span class="c1"></span>    <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1">// se
-</span><span class="c1"></span>    <span class="nx">width</span><span class="p">,</span>      <span class="c1">// s
-</span><span class="c1"></span>    <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1">// sw
-</span><span class="c1"></span>    <span class="o">-</span><span class="mi">1</span><span class="p">,</span>         <span class="c1">// w
-</span><span class="c1"></span><span class="p">];</span>
-</code></pre></div><p>One last thing before we proceed with <code>step()</code>, let&rsquo;s do a helper function <code>at(i)</code> that will tell us if the cell is <em>dead or alive</em> for any given position in the current state, and while we are at it, let&rsquo;s bound the <code>y</code> axis toroidally altogether.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Gets cell &#39;status&#39; at a given index (1D)
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">at</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>     <span class="nx">i</span> <span class="o">+=</span> <span class="nx">size</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&gt;=</span> <span class="nx">size</span><span class="p">)</span> <span class="nx">i</span> <span class="o">-=</span> <span class="nx">size</span><span class="p">;</span>
-  <span class="k">return</span> <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>What is happening here? As we only care about two bounds, if <code>index &lt; 0</code> we add <code>size</code> to it essentially moving the index to the last row <code>y</code> in the same <code>x</code> position. Comparable to that, if <code>index &gt; size</code> we move it to the first row <code>y</code> by subtracting <code>size</code> from it. We then return <code>0</code> if it&rsquo;s dead or <code>1</code> if it&rsquo;s live, as we do not care about the actual color value of the state, but just the status for calculating the number of neighbours. Now, for the last part&hellip;</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Creates the next generation of cells
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">step</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">neighbours</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="k">of</span> <span class="nx">offset</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">neighbours</span> <span class="o">+=</span> <span class="nx">at</span><span class="p">(</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">j</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="k">if</span>      <span class="p">((</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">neighbours</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">))</span>  <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">dead</span><span class="p">;</span>      <span class="c1">// under-population
-</span><span class="c1"></span>    <span class="k">else</span> <span class="k">if</span> <span class="p">((</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">neighbours</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">))</span>  <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">dead</span><span class="p">;</span>      <span class="c1">// over-population
-</span><span class="c1"></span>    <span class="k">else</span> <span class="k">if</span> <span class="p">((</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">dead</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">neighbours</span> <span class="o">==</span> <span class="mi">3</span><span class="p">))</span> <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">live</span><span class="p">;</span>      <span class="c1">// reproduction
-</span><span class="c1"></span>    <span class="k">else</span>                                              <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>  <span class="c1">// stasis
-</span><span class="c1"></span>  <span class="p">}</span>
-  <span class="kd">let</span> <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">state</span><span class="p">;</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">next</span><span class="p">;</span> <span class="nx">next</span> <span class="o">=</span> <span class="nx">tmp</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>The code is weirdly formatted on purpose for readability. As said before, we iterate over each cell and for each one, we count the number of live neighbours it has (that is why <code>at(i)</code> returns 0 or 1) by iterating over our <code>offset</code> array defined above. After that we follow Conway&rsquo;s rules to determine what the status of that cell will be towards the next generation. This could be simplified a bit further between the first and second checks (over and under population), but I think it&rsquo;s a bit more explicit what is happening this way. Finally we swap our current generation (<code>state</code>) with the next generation. Let&rsquo;s give it a try, shall we?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// These are really simple and straight forward
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>            <span class="c1">// west
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>            <span class="c1">// east
+</span></span></span><span class="line"><span class="cl"><span class="c1">// If we go one width back, we are actually moving &#39;up&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1">// a row, same goes for down, we add a width...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">width</span><span class="p">]</span>        <span class="c1">// north 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span><span class="p">]</span>        <span class="c1">// south
+</span></span></span><span class="line"><span class="cl"><span class="c1">// The rest is just a simple combination of all of them
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// northwest
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// northeast
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// southwest
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>    <span class="c1">// southeast
+</span></span></span></code></pre></div><p>From the code above we can see that for each <code>offset</code> only <code>i</code> is a variable, and we can treat the rest as a constant, let&rsquo;s optimize here and calculate the constant part and put them in an array so we can iterate over those faster later on. Declare <code>offsets</code> at the top and initialize it inside <code>setup</code> once the <code>width</code> is known.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">offset</span> <span class="o">=</span> <span class="p">[</span>      <span class="c1">// offsets for neighbours in 1D array
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// nw
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span><span class="p">,</span>     <span class="c1">// n
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">-</span><span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// ne
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="mi">1</span><span class="p">,</span>          <span class="c1">// e
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">width</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1">// se
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">width</span><span class="p">,</span>      <span class="c1">// s
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1">// sw
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">-</span><span class="mi">1</span><span class="p">,</span>         <span class="c1">// w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">];</span>
+</span></span></code></pre></div><p>One last thing before we proceed with <code>step()</code>, let&rsquo;s do a helper function <code>at(i)</code> that will tell us if the cell is <em>dead or alive</em> for any given position in the current state, and while we are at it, let&rsquo;s bound the <code>y</code> axis toroidally altogether.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Gets cell &#39;status&#39; at a given index (1D)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">at</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>     <span class="nx">i</span> <span class="o">+=</span> <span class="nx">size</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&gt;=</span> <span class="nx">size</span><span class="p">)</span> <span class="nx">i</span> <span class="o">-=</span> <span class="nx">size</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>What is happening here? As we only care about two bounds, if <code>index &lt; 0</code> we add <code>size</code> to it essentially moving the index to the last row <code>y</code> in the same <code>x</code> position. Comparable to that, if <code>index &gt; size</code> we move it to the first row <code>y</code> by subtracting <code>size</code> from it. We then return <code>0</code> if it&rsquo;s dead or <code>1</code> if it&rsquo;s live, as we do not care about the actual color value of the state, but just the status for calculating the number of neighbours. Now, for the last part&hellip;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Creates the next generation of cells
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">step</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">neighbours</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="k">of</span> <span class="nx">offset</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">neighbours</span> <span class="o">+=</span> <span class="nx">at</span><span class="p">(</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">j</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span>      <span class="p">((</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">neighbours</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">))</span>  <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">dead</span><span class="p">;</span>      <span class="c1">// under-population
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">else</span> <span class="k">if</span> <span class="p">((</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">neighbours</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">))</span>  <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">dead</span><span class="p">;</span>      <span class="c1">// over-population
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">else</span> <span class="k">if</span> <span class="p">((</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">dead</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">neighbours</span> <span class="o">==</span> <span class="mi">3</span><span class="p">))</span> <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">live</span><span class="p">;</span>      <span class="c1">// reproduction
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">else</span>                                              <span class="nx">next</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>  <span class="c1">// stasis
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">state</span><span class="p">;</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">next</span><span class="p">;</span> <span class="nx">next</span> <span class="o">=</span> <span class="nx">tmp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The code is weirdly formatted on purpose for readability. As said before, we iterate over each cell and for each one, we count the number of live neighbours it has (that is why <code>at(i)</code> returns 0 or 1) by iterating over our <code>offset</code> array defined above. After that we follow Conway&rsquo;s rules to determine what the status of that cell will be towards the next generation. This could be simplified a bit further between the first and second checks (over and under population), but I think it&rsquo;s a bit more explicit what is happening this way. Finally we swap our current generation (<code>state</code>) with the next generation. Let&rsquo;s give it a try, shall we?</p>
 
 
 
@@ -420,76 +490,76 @@ I always thought I would never have the time or enough content to publish, and w
         &lt;script&gt;
             
     let size;               // width * height (DRY)
-let state, next;        // current and next generation
-let percentage = 25;    // ~% of live cells to seed
-let live = 255;         // color for live cells (&#39;limegreen&#39;, &#39;#FF6600&#39;)
-let dead = 0;           // color for dead cells (&#39;pink&#39;, &#39;rgba(123,45,67)&#39;)
-let offset;             // hold the adjacent offsets of neighbours
-
-function setup() {
-    createCanvas(180, 120);
-    frameRate(10);
-    size = width * height;
-    state = Array(size).fill(dead);
-    next = Array(size).fill(dead);
-    offset = [ // offsets for neighbours in 1D array
-        -width - 1, // nw
-        -width,     // n
-        -width &#43; 1, // ne
-        1,          // e
-        width &#43; 1,  // se
-        width,      // s
-        width - 1,  // sw
-        -1,         // w
-    ];
-    seed();
-}
-
-// Main rendering loop
-function draw() {
-    for (let i = 0; i &lt; size; i&#43;&#43;) {
-        set(i % width, i / width, color(state[i]));
+    let state, next;        // current and next generation
+    let percentage = 25;    // ~% of live cells to seed
+    let live = 255;         // color for live cells (&#39;limegreen&#39;, &#39;#FF6600&#39;)
+    let dead = 0;           // color for dead cells (&#39;pink&#39;, &#39;rgba(123,45,67)&#39;)
+    let offset;             // hold the adjacent offsets of neighbours
+    
+    function setup() {
+        createCanvas(180, 120);
+        frameRate(10);
+        size = width * height;
+        state = Array(size).fill(dead);
+        next = Array(size).fill(dead);
+        offset = [ // offsets for neighbours in 1D array
+            -width - 1, // nw
+            -width,     // n
+            -width &#43; 1, // ne
+            1,          // e
+            width &#43; 1,  // se
+            width,      // s
+            width - 1,  // sw
+            -1,         // w
+        ];
+        seed();
     }
-    updatePixels();
-    step();
-}
-
-// Randomly seeds the state with live cells
-function seed() {
-    state.fill(dead);
-    const living = floor(size * percentage / 100);
-    for (let i = 0; i &lt; living; i&#43;&#43;) {
-        state[floor(random(size))] = live;
-    }
-}
-
-// Creates the next generation of cells
-function step() {
-    for (let i = 0; i &lt; size; i&#43;&#43;) {
-        let neighbours = 0;
-        for (let j of offset) {
-            neighbours &#43;= at(i &#43; j);
+    
+    // Main rendering loop
+    function draw() {
+        for (let i = 0; i &lt; size; i&#43;&#43;) {
+            set(i % width, i / width, color(state[i]));
         }
-        if ((state[i] == live)      &amp;&amp; (neighbours &lt; 2))  next[i] = dead;     // under-population
-        else if ((state[i] == live) &amp;&amp; (neighbours &gt; 3))  next[i] = dead;     // over-population
-        else if ((state[i] == dead) &amp;&amp; (neighbours == 3)) next[i] = live;     // reproduction
-        else                                              next[i] = state[i]; // stasis
+        updatePixels();
+        step();
     }
-    let tmp = state;
-    state = next;
-    next = tmp;
-}
-
-// Gets cell &#39;status&#39; at a given index (1D)
-function at(i) {
-    if (i &lt; 0)      i &#43;= size;
-    if (i &gt;= size)  i -= size;
-    return state[i] == live ? 1 : 0;
-}
-
-function mousePressed() {
-    seed();
-}
+    
+    // Randomly seeds the state with live cells
+    function seed() {
+        state.fill(dead);
+        const living = floor(size * percentage / 100);
+        for (let i = 0; i &lt; living; i&#43;&#43;) {
+            state[floor(random(size))] = live;
+        }
+    }
+    
+    // Creates the next generation of cells
+    function step() {
+        for (let i = 0; i &lt; size; i&#43;&#43;) {
+            let neighbours = 0;
+            for (let j of offset) {
+                neighbours &#43;= at(i &#43; j);
+            }
+            if ((state[i] == live)      &amp;&amp; (neighbours &lt; 2))  next[i] = dead;     // under-population
+            else if ((state[i] == live) &amp;&amp; (neighbours &gt; 3))  next[i] = dead;     // over-population
+            else if ((state[i] == dead) &amp;&amp; (neighbours == 3)) next[i] = live;     // reproduction
+            else                                              next[i] = state[i]; // stasis
+        }
+        let tmp = state;
+        state = next;
+        next = tmp;
+    }
+    
+    // Gets cell &#39;status&#39; at a given index (1D)
+    function at(i) {
+        if (i &lt; 0)      i &#43;= size;
+        if (i &gt;= size)  i -= size;
+        return state[i] == live ? 1 : 0;
+    }
+    
+    function mousePressed() {
+        seed();
+    }
   
         &lt;/script&gt;
     &lt;/body&gt;
@@ -500,47 +570,47 @@ function mousePressed() {
 </div>
 
 <p>Great! 😁 The initial state is randomly seeded with 25% live cells, and then we let the game follow it&rsquo;s course. But there is no fun in just watching it a single time, so you can click on  or anywhere on the canvas to re-seed the state and restart the game. This usually runs much faster, specially for the canvas size we picked as it&rsquo;s very small, but I used <code>frameRate(10)</code> in our setup so that each step in time could be appreciated. You can click on on the sketch toolbar to check the code in Github. If you try this code in the <a href="https://editor.p5js.org/">p5.js web editor</a>, you will notice that the sketch is really small, exactly the way we defined it in the <code>setup</code> with <code>createCanvas(180, 120)</code>, as we are actually using pixels! Your first impulse would be to change the size and make the canvas bigger, but that will not scale the pixels, you are just going to have a lot more cells to deal with. That is why most people implement <em>The Game of Life</em> by drawing squares or so, but the trick here, is that the browser already has the ability to scale the <code>canvas</code> element regardless of it&rsquo;s size! So while embedding sketches in my blog I&rsquo;m using&hellip;</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">main</span><span class="o">,</span> <span class="p">.</span><span class="nc">p5Canvas</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
-    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-    <span class="n">image-rendering</span><span class="p">:</span> <span class="kc">pixelated</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>&hellip; essentially overriding p5.js style and making the canvas scale to the content, it also makes it responsive if we also scale the <code>iframe</code> (try resizing the browser). Neat! One attribute is apparently not supported in Firefox (at the time of writing) and that is <code>image-rendering: pixelated</code>. What it does, is essentially disabling interpolation while scaling our canvas, so our little pixels don&rsquo;t blur out and look like perfect squares when scaled up! You can read all about it in the <a href="https://developer.mozilla.org/es/docs/Web/CSS/image-rendering">MDN Web Docs</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">main</span><span class="o">,</span> <span class="p">.</span><span class="nc">p5Canvas</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image-rendering</span><span class="p">:</span> <span class="kc">pixelated</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>&hellip; essentially overriding p5.js style and making the canvas scale to the content, it also makes it responsive if we also scale the <code>iframe</code> (try resizing the browser). Neat! One attribute is apparently not supported in Firefox (at the time of writing) and that is <code>image-rendering: pixelated</code>. What it does, is essentially disabling interpolation while scaling our canvas, so our little pixels don&rsquo;t blur out and look like perfect squares when scaled up! You can read all about it in the <a href="https://developer.mozilla.org/es/docs/Web/CSS/image-rendering">MDN Web Docs</a>.</p>
 <p>But, what if we wanted to implement it in a large canvas with colors and figures like everyone else? This is about generative art after all. There is not much art in diminutive black and white pixels dancing around a canvas (or&hellip; is there? 🤔). Thankfully the way we implemented this version makes it incredibly easy to play and create different versions of the game. Let&rsquo;s start by doing some changes in our setup and variables. I will only show the meaningful changes, as always the full code is available on Github.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>      <span class="c1">// Use booleans as we don&#39;t need to store
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">dead</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>     <span class="c1">// the color, it&#39;s calculated on draw
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">resolution</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>  <span class="c1">// To create a virtual grid on top the canvas
-</span><span class="c1"></span>
-<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">);</span>
-  <span class="nx">noStroke</span><span class="p">();</span>         <span class="c1">// disables the stroke when figure drawing
-</span><span class="c1"></span>  <span class="nx">width</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">;</span>
-  <span class="nx">height</span> <span class="o">=</span> <span class="nx">height</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">;</span>
-  <span class="nx">size</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">*</span> <span class="nx">height</span><span class="p">;</span>
-  <span class="p">...</span>
-<span class="p">}</span>
-</code></pre></div><p>So first we grow the canvas to a comfortable viewing size, and we define a <code>resolution</code> to &ldquo;scale down&rdquo; our grid, in this example our <code>state</code> of cells will be of <code>128 * 72</code>, which is a good enough grid to play with. Then as we will not be using the <code>state</code> to store the color anymore, we just change dead and live to <code>booleans</code> as originally intended (yes, the rest of the code will work without a hitch). <code>noStroke()</code> disables the stroke when figure drawing, as we will be using those now. After that, we redefine our <code>width</code> and <code>height</code> values to those scaled by our resolution, this will not change tha canvas already created, but now our whole sketch will use these. Finally let&rsquo;s modify our <code>draw</code> function and have a little fun with it.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">clear</span><span class="p">();</span>
-  <span class="nx">background</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span><span class="p">)</span> <span class="o">*</span> <span class="nx">resolution</span><span class="p">;</span>
-      <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span><span class="p">)</span> <span class="o">*</span> <span class="nx">resolution</span><span class="p">;</span>
-      <span class="nx">cell</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-  <span class="nx">step</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="c1">// Draws a colored circle with interpolated hue
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">cell</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">fill</span><span class="p">(</span><span class="sb">`hsl(</span><span class="si">${</span><span class="nx">floor</span><span class="p">(</span><span class="nx">map</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">size</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">360</span><span class="p">))</span><span class="si">}</span><span class="sb">,100%,50%)`</span><span class="p">);</span>
-  <span class="nx">circle</span><span class="p">(</span><span class="nx">floor</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="nx">resolution</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span> <span class="o">+</span> <span class="nx">resolution</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">resolution</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><p>That is all, let&rsquo;s quickly review what is happening, first we <code>clear()</code> the canvas and fill it with black <code>background(0)</code> as we are only going to be drawing live cells (way more efficient). Next we proceed as usual, but check for live cells only <code>state[i] == live</code> (for readability as <code>state[i]</code> is already a boolean). Now the magic happens, we need to scale both <code>x</code> and <code>y</code> back to screen coordinates by multiplying them by the resolution, and in <code>cell(i, x, y)</code> we set the <code>fill(color)</code> with a neat trick by interpolating <code>i</code> into the hue [0, 360) of an <code>HSL</code> color! And finally we draw our cell as a colored <code>circle(x, y, radius)</code> with an offset to center it. Let&rsquo;s see it in action! 😎</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">live</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>      <span class="c1">// Use booleans as we don&#39;t need to store
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">dead</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>     <span class="c1">// the color, it&#39;s calculated on draw
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">resolution</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>  <span class="c1">// To create a virtual grid on top the canvas
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">noStroke</span><span class="p">();</span>         <span class="c1">// disables the stroke when figure drawing
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">width</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">height</span> <span class="o">=</span> <span class="nx">height</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">size</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">*</span> <span class="nx">height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So first we grow the canvas to a comfortable viewing size, and we define a <code>resolution</code> to &ldquo;scale down&rdquo; our grid, in this example our <code>state</code> of cells will be of <code>128 * 72</code>, which is a good enough grid to play with. Then as we will not be using the <code>state</code> to store the color anymore, we just change dead and live to <code>booleans</code> as originally intended (yes, the rest of the code will work without a hitch). <code>noStroke()</code> disables the stroke when figure drawing, as we will be using those now. After that, we redefine our <code>width</code> and <code>height</code> values to those scaled by our resolution, this will not change tha canvas already created, but now our whole sketch will use these. Finally let&rsquo;s modify our <code>draw</code> function and have a little fun with it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Main rendering loop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">background</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">size</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="nx">live</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="nx">width</span><span class="p">)</span> <span class="o">*</span> <span class="nx">resolution</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="nx">i</span> <span class="o">/</span> <span class="nx">width</span><span class="p">)</span> <span class="o">*</span> <span class="nx">resolution</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">cell</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">step</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Draws a colored circle with interpolated hue
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">cell</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fill</span><span class="p">(</span><span class="sb">`hsl(</span><span class="si">${</span><span class="nx">floor</span><span class="p">(</span><span class="nx">map</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">size</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">360</span><span class="p">))</span><span class="si">}</span><span class="sb">,100%,50%)`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">circle</span><span class="p">(</span><span class="nx">floor</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="nx">resolution</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span> <span class="o">+</span> <span class="nx">resolution</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">resolution</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>That is all, let&rsquo;s quickly review what is happening, first we <code>clear()</code> the canvas and fill it with black <code>background(0)</code> as we are only going to be drawing live cells (way more efficient). Next we proceed as usual, but check for live cells only <code>state[i] == live</code> (for readability as <code>state[i]</code> is already a boolean). Now the magic happens, we need to scale both <code>x</code> and <code>y</code> back to screen coordinates by multiplying them by the resolution, and in <code>cell(i, x, y)</code> we set the <code>fill(color)</code> with a neat trick by interpolating <code>i</code> into the hue [0, 360) of an <code>HSL</code> color! And finally we draw our cell as a colored <code>circle(x, y, radius)</code> with an offset to center it. Let&rsquo;s see it in action! 😎</p>
 
 
 
@@ -570,95 +640,95 @@ function mousePressed() {
         &lt;script&gt;
             
     let size;               // width * height (readability)
-let state, next;        // current and nex generation
-let percentage = 25;    // ~% of live cells to seed
-let live = true;        // Use booleans as we don&#39;t need to store
-let dead = false;       // the color, it&#39;s calculated on draw
-let offset;             // hold the adjacent offsets of neighbours
-let resolution = 10;    // to create a virtual grid on top the canvas
-let half;               // readability (resolution / 2)
-
-function setup() {
-    createCanvas(1280, 720);
-    frameRate(15);
-    noStroke();
-    width = width / resolution;
-    height = height / resolution;
-    size = width * height;
-    half = resolution / 2;
-    state = Array(size).fill(dead);
-    next = Array(size).fill(dead);
-    offset = [ // offsets for neighbours in 1D array
-        -width - 1, // nw
-        -width, // n
-        -width &#43; 1, // ne
-        1, // e
-        width &#43; 1, // se
-        width, // s
-        width - 1, // sw
-        -1, // w
-    ];
-    seed();
-}
-
-// Main rendering loop
-function draw() {
-    if (mouseIsPressed === true) {
-        let i = floor(mouseY / resolution) * width &#43; floor(mouseX / resolution);
-        state[i] = live;
-        cell(i, mouseX, mouseY);
-        return;
+    let state, next;        // current and nex generation
+    let percentage = 25;    // ~% of live cells to seed
+    let live = true;        // Use booleans as we don&#39;t need to store
+    let dead = false;       // the color, it&#39;s calculated on draw
+    let offset;             // hold the adjacent offsets of neighbours
+    let resolution = 10;    // to create a virtual grid on top the canvas
+    let half;               // readability (resolution / 2)
+    
+    function setup() {
+        createCanvas(1280, 720);
+        frameRate(15);
+        noStroke();
+        width = width / resolution;
+        height = height / resolution;
+        size = width * height;
+        half = resolution / 2;
+        state = Array(size).fill(dead);
+        next = Array(size).fill(dead);
+        offset = [ // offsets for neighbours in 1D array
+            -width - 1, // nw
+            -width, // n
+            -width &#43; 1, // ne
+            1, // e
+            width &#43; 1, // se
+            width, // s
+            width - 1, // sw
+            -1, // w
+        ];
+        seed();
     }
-
-    clear();
-    background(0);
-    for (let i = 0; i &lt; size; i&#43;&#43;) {
-        if (state[i]) {
-            let x = (i % width) * resolution;
-            let y = (i / width) * resolution;
-            cell(i, x, y);
+    
+    // Main rendering loop
+    function draw() {
+        if (mouseIsPressed === true) {
+            let i = floor(mouseY / resolution) * width &#43; floor(mouseX / resolution);
+            state[i] = live;
+            cell(i, mouseX, mouseY);
+            return;
+        }
+    
+        clear();
+        background(0);
+        for (let i = 0; i &lt; size; i&#43;&#43;) {
+            if (state[i]) {
+                let x = (i % width) * resolution;
+                let y = (i / width) * resolution;
+                cell(i, x, y);
+            }
+        }
+        step();
+    }
+    
+    // Draws a colored circle with interpolated hue
+    function cell(i, x, y) {
+        fill(`hsl(${floor(map(i,0,size,0,360))},100%,50%)`);
+        circle(floor(x) &#43; half, floor(y) &#43; half, resolution);
+    }
+    
+    // Randomly seeds the state with live cells
+    function seed() {
+        state.fill(dead);
+        const living = floor(size * percentage / 100);
+        for (let i = 0; i &lt; living; i&#43;&#43;) {
+            state[floor(random(size))] = live;
         }
     }
-    step();
-}
-
-// Draws a colored circle with interpolated hue
-function cell(i, x, y) {
-    fill(`hsl(${floor(map(i,0,size,0,360))},100%,50%)`);
-    circle(floor(x) &#43; half, floor(y) &#43; half, resolution);
-}
-
-// Randomly seeds the state with live cells
-function seed() {
-    state.fill(dead);
-    const living = floor(size * percentage / 100);
-    for (let i = 0; i &lt; living; i&#43;&#43;) {
-        state[floor(random(size))] = live;
-    }
-}
-
-// Creates the next generation of cells
-function step() {
-    for (let i = 0; i &lt; size; i&#43;&#43;) {
-        let neighbours = 0;
-        for (let j of offset) {
-            neighbours &#43;= at(i &#43; j);
+    
+    // Creates the next generation of cells
+    function step() {
+        for (let i = 0; i &lt; size; i&#43;&#43;) {
+            let neighbours = 0;
+            for (let j of offset) {
+                neighbours &#43;= at(i &#43; j);
+            }
+            if ((state[i] == live) &amp;&amp; (neighbours &lt; 2 || neighbours &gt; 3)) next[i] = dead;
+            else if ((state[i] == dead) &amp;&amp; (neighbours == 3)) next[i] = live;
+            else next[i] = state[i];
         }
-        if ((state[i] == live) &amp;&amp; (neighbours &lt; 2 || neighbours &gt; 3)) next[i] = dead;
-        else if ((state[i] == dead) &amp;&amp; (neighbours == 3)) next[i] = live;
-        else next[i] = state[i];
+        let tmp = state;
+        state = next;
+        next = tmp;
     }
-    let tmp = state;
-    state = next;
-    next = tmp;
-}
-
-// Gets cell &#39;status&#39; at a given index (1D)
-function at(i) {
-    if (i &lt; 0) i &#43;= size;
-    if (i &gt; size) i -= size;
-    return state[i] == live ? 1 : 0;
-}
+    
+    // Gets cell &#39;status&#39; at a given index (1D)
+    function at(i) {
+        if (i &lt; 0) i &#43;= size;
+        if (i &gt; size) i -= size;
+        return state[i] == live ? 1 : 0;
+    }
   
         &lt;/script&gt;
     &lt;/body&gt;
@@ -669,44 +739,62 @@ function at(i) {
 </div>
 
 <p>Bravo! I separated <code>cell</code> into a new function to add a bit more fun to <em>The Game of Life</em>, now instead of re-seeding randomly by clicking on the canvas, it actually seeds new cells manually! Try it, just press the mouse button and draw some live cells directly to the current generation while it remains <code>paused</code>. Now it&rsquo;s way more fun to play with it. To achieve this, we simply modify <code>draw()</code> like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Main rendering loop
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">mouseY</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">)</span> <span class="o">*</span> <span class="nx">width</span> <span class="o">+</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">mouseX</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">);</span>
-    <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">live</span><span class="p">;</span>
-    <span class="nx">cell</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">);</span>
-    <span class="k">return</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="c1">// ...rest of draw function  
-</span><span class="c1"></span><span class="p">}</span>
-</code></pre></div><h4 id="closing-thoughts">Closing thoughts</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Main rendering loop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">mouseY</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">)</span> <span class="o">*</span> <span class="nx">width</span> <span class="o">+</span> <span class="nx">floor</span><span class="p">(</span><span class="nx">mouseX</span> <span class="o">/</span> <span class="nx">resolution</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">live</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">cell</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// ...rest of draw function  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h4 id="closing-thoughts">Closing thoughts</h4>
 <p>And that&rsquo;s all for today. You can keep learning <a href="https://p5js.org/">p5.js</a> using it&rsquo;s <a href="https://editor.p5js.org/">web editor</a> for your own sketches! Play with <em>The Game of Life</em> on the sketch above or <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">learn more about it</a>! I really enjoyed writing <em>Life</em> as it&rsquo;s something I have never done before, and I will definitely keep on doing it! The main purpose of this blog is to document everything I learn about generative art, as well as to share everything I already know. In a later episode, let&rsquo;s do a similar implementation using Go (or Rust if I can manage to learn it before then), compile it into Web Assembly and make some benchmarks!</p>
 <p>One thing that took some time was hacking p5.js so that I could embed sketches where the canvas scale with the content, so that they could be viewed within the post naturally without worrying about specific sizing of the canvas. This led me to write some <a href="https://gohugo.io/templates/shortcode-templates/">Hugo shortcodes</a> in order to generate minimal HTML files I could embed within my site, where I had full control over the style (you can check them out on Github). I would like to keep using p5.js in my posts on a regular basis, as it&rsquo;s awesome for drafting some code and producing amazing results, so it is most likely I will write my own minimal editor that I can embed into the blog with JS. I will be using <a href="https://svelte.dev/">Svelte</a> and going the same route as the official editor by hacking away with the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">iframe&rsquo;s srcdoc attribute</a>, that way I can provide fine controls (play, stop, refresh, edit, fullscreen, etc&hellip;) and I&rsquo;ll make sure it&rsquo;s open source. If it sounds like something you might be interested in let me know in the comments!</p>
 <p>¡Hasta la próxima!</p>
 
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://xoriopalio.github.io/tags/p5.js/">p5.js</a>&nbsp;
+            
+              <a href="https://xoriopalio.github.io/tags/generative-art/">generative art</a>&nbsp;
+            
+              <a href="https://xoriopalio.github.io/tags/automaton/">automaton</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
       </article>
-      <hr>
-      <b>created at</b>: February 18, 2021
-      <br>
-      <b>tags</b>: [
+
       
-      <span class="post-meta">
-        
-        #<a href="https://xoriopalio.github.io/tags/p5.js/">p5.js</a>&nbsp;
-        
-        #<a href="https://xoriopalio.github.io/tags/generative-art/">generative art</a>&nbsp;
-        
-        #<a href="https://xoriopalio.github.io/tags/automaton/">automaton</a>&nbsp;
-        
-      </span>
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://xoriopalio.github.io/post/ena-hmerologio-gia-ta-gidia/" data-toggle="tooltip" data-placement="top" title="Ενα ημερολόγιο για τα γίδια">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://xoriopalio.github.io/post/sound-score-part/" data-toggle="tooltip" data-placement="top" title="p5.js sound score part">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
       
-      ]
+
+
       
         
+          
           <div class="disqus-comments">
             <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+    window.disqus_config = function () {
     
     
     
@@ -725,6 +813,7 @@ function at(i) {
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           </div>
+          
         
         
       
@@ -733,53 +822,40 @@ function at(i) {
   </div>
 </div>
 
-    
-    <footer>
+      
+<footer>
   <div class="container">
+    
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:igoumeninja@gmail.com" title="Email me">
+		
+		  <a href="https://github.com/igoumeninja" title="GitHub">
+		
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/toxoriopalio" title="Facebook">
+		
+		  <a href="https://twitter.com/xoriopalio" title="Twitter">
+		
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/igoumeninja" title="GitHub">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/xoriopalio" title="Twitter">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
           
           <li>
-            
-            <a href="https://xoriopalio.github.io/index.xml" title="RSS">
-            
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -788,12 +864,9 @@ function at(i) {
         <p class="credits copyright text-muted">
           
             
-              <a href="https://xoriopalio.github.io">Aris &amp; Katerina</a>
+              <a href="https://xoriopalio.github.io">Aris</a>
             
           
-
-          &nbsp;&bull;&nbsp;
-          2023
 
           
             &nbsp;&bull;&nbsp;
@@ -802,25 +875,22 @@ function at(i) {
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="https://gohugo.io">Hugo v0.121.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
     </div>
   </div>
-</footer>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://xoriopalio.github.io/js/main.js"></script>
 <script src="https://xoriopalio.github.io/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
-<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
-<script src="https://xoriopalio.github.io/js/load-photoswipe.js"></script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://xoriopalio.github.io/js/load-photoswipe.js"></script>
 
 
 
@@ -828,10 +898,9 @@ function at(i) {
 
 
 
-<script defer language="javascript" type="text/javascript"  src="/js/myscripts.js"></script>
 
 
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/53f023938c09208c3a71e6516/e97e8059a0649ced75abd5413.js");</script>
-
+    
   </body>
 </html>
+

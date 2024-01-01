@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Το Χωριό Παλιό</title>
+    <link>https://xoriopalio.github.io/tags/test/</link>
+    <description>Recent content in test on Το Χωριό Παλιό</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xoriopalio.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo tricks</title>
+      <link>https://xoriopalio.github.io/post/aaa-2024/</link>
+      <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xoriopalio.github.io/post/aaa-2024/</guid>
+      <description>sdfdsfsdf&#xA;sdfgsdfsddxfvsdf&#xA;TOC&#xA;:EXPORT_OPTIONS: toc:nil Details&#xA;This is the details title (click) This is the content (hidden until clicked). </description>
+    </item>
+  </channel>
+</rss>
