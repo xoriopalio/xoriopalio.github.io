@@ -27,7 +27,7 @@
       <link>https://xoriopalio.github.io/post/hugo-tricks/</link>
       <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/hugo-tricks/</guid>
-      <description>TOC&#xA;:EXPORT_OPTIONS: toc:nil :EXPORTOPTIONS: toc:nil&#xA;Details&#xA;This is the details title (click) This is the content (hidden until clicked). </description>
+      <description>TOC&#xA;:EXPORT_OPTIONS: toc:nil Details&#xA;This is the details title (click) This is the content (hidden until clicked). </description>
     </item>
     <item>
       <title>Μυζήθρα πλήρους γάλακτος</title>
