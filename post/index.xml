@@ -149,13 +149,6 @@
       <description>Ωραία η ντομάτα! Τα κλειδιά στη καλλιέργεια είναι:&#xA;Κοπριά και πολύ πότισμα στην αρχή. Προληπτικός ψεκασμός με βορδιγάλειο κάθε μήνα Κλαδέυουμε τα χαμηλά και όταν σηκωθεί αρκετά αφήνω πρώτα να ανθίσει και κόβω το υπόλοιπο. https://chrisdeper.com/2019/02/14/ntomates-kalliergeia/2/</description>
     </item>
     <item>
-      <title>210313 sketch</title>
-      <link>https://xoriopalio.github.io/post/210313-sketch/</link>
-      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/210313-sketch/</guid>
-      <description>199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 // ... this the code fro p5.js. Yoy can also test it at .............. let x,y,r=0,f=0,ratio = 200; let slider; function setup() { createCanvas(600,300); background(255); //stroke(0,253); //text(&amp;#34;sketching is relaxing&amp;#34;,0,20); } function draw() { //text(&amp;#34;sketching is relaxing&amp;#34;,0,20); //fill(255,50); //rect(-10,-10, width+20, height+20); f=f+TWO_PI/ratio; r=r+0.</description>
-    </item>
-    <item>
       <title>Υγρή κουτσουλιά</title>
       <link>https://xoriopalio.github.io/post/ygri-koutsoulia/</link>
       <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
@@ -245,48 +238,6 @@
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/fasolakia/</guid>
       <description>Η πρώτη σπορά με σπόρο αγοραστό 1ευρώ απο τον Πέτρο, ποικιλίας Μπαρμπουνοζαργάνα.&#xA;Πολύ καλή η στήριξη του παππού του Σταμάτη pic.twitter.com/3prd8RdCHS&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) February 22, 2021 </description>
-    </item>
-    <item>
-      <title>Live Visuals @ Χωριό Παλιό</title>
-      <link>https://xoriopalio.github.io/post/live-visual-at-xoriopalio/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/live-visual-at-xoriopalio/</guid>
-      <description>^</description>
-    </item>
-    <item>
-      <title>p5.js sound</title>
-      <link>https://xoriopalio.github.io/post/sound-p5-js/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/sound-p5-js/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>p5.js sound sample</title>
-      <link>https://xoriopalio.github.io/post/sound-sample-p5-js/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/sound-sample-p5-js/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>p5.js sound score</title>
-      <link>https://xoriopalio.github.io/post/sound-score/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/sound-score/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>p5.js sound score part</title>
-      <link>https://xoriopalio.github.io/post/sound-score-part/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/sound-score-part/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>The Game of Life</title>
-      <link>https://xoriopalio.github.io/post/the-game-of-life/</link>
-      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xoriopalio.github.io/post/the-game-of-life/</guid>
-      <description>Finally! I have been trying to start a dev blog for like 10 years now, and I always found a way to procrastinate that 😩. I always thought I would never have the time or enough content to publish, and with how fast technology becomes outdated, it seemed inappropriate at the time. On the other hand, I always have been an enthusiast of generative artwork or algorithmic art, and I thought: &amp;ldquo;Hey, that never goes old!</description>
     </item>
     <item>
       <title>Ενα ημερολόγιο για τα γίδια</title>
