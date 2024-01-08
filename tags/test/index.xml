@@ -13,7 +13,7 @@
       <link>https://xoriopalio.github.io/post/hugo-tricks/</link>
       <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/hugo-tricks/</guid>
-      <description>TOC&#xA;:EXPORT_OPTIONS: toc:nil Details&#xA;This is the details title (click) This is the content (hidden until clicked). </description>
+      <description>Στο συγκεκριμένο άρθρο θα συγκεντρώνω πληροφορίες σχετικά με το αγαπημενο Hugo, org-mode, emacs και γενικά περί του ιστότοπου και την ανάπτυξη αυτού.&#xA;TOC Το παρακάτω PROPERTY θα προστείθετε κάτω από το :TITLE:&#xA;:EXPORT_OPTIONS: toc:nil Embed media&#xA;{{&amp;lt; imgur id=&amp;ldquo;vRbDiHJ&amp;rdquo; &amp;gt;}} Μην ξεχάσεις να αλλάξεις τα αποσιωπιτικά!&#xA;https://gist.github.com/brunoamaral/d12cbfc34db7b1f82b8974c15c0b66e1&#xA;Details&#xA;This is the details title (click) This is the content (hidden until clicked). </description>
     </item>
   </channel>
 </rss>
