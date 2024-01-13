@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag-cloud on Το Χωριό Παλιό</title>
+    <link>https://xoriopalio.github.io/tags/tag-cloud/</link>
+    <description>Recent content in tag-cloud on Το Χωριό Παλιό</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xoriopalio.github.io/tags/tag-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Λέξεις Κλειδιά</title>
+      <link>https://xoriopalio.github.io/post/tagcloud/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://xoriopalio.github.io/post/tagcloud/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

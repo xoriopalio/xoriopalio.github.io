@@ -508,7 +508,7 @@ footer div.disclaimer {
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
@@ -729,7 +729,8 @@ footer div.disclaimer {
   padding: 10px 5px;
   background: #FFF;
   border-radius: 0;
-  color: #404040;
+  /* aris comment color: #404040; */
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
