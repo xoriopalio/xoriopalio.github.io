@@ -2,11 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xoriopalio.github.io/post/cristiano-ronaldo/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/dev/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/goat-id/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/post/hugo-tricks/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xoriopalio.github.io/post/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/tags/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/%CE%B1%CE%AF%CE%B3%CE%B5%CF%82/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/argiris-g/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/post/aa_authors/argiris/to-genealogiko-dentro-mas/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/tags/%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%B9/</loc>
     <lastmod>2024-01-16T00:00:00+00:00</lastmod>
@@ -17,28 +38,19 @@
     <loc>https://xoriopalio.github.io/post/pappoulias/</loc>
     <lastmod>2024-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xoriopalio.github.io/tags/argiris-g/</loc>
+    <loc>https://xoriopalio.github.io/post/aa_authors/argiris/gia-to-xorio-apo-tote-1/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xoriopalio.github.io/post/gia-to-xorio-apo-tote/</loc>
+    <loc>https://xoriopalio.github.io/post/aa_authors/argiris/gia-to-xorio-apo-tote-2/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xoriopalio.github.io/post/gia-to-xorio-apo-tote-1/</loc>
+    <loc>https://xoriopalio.github.io/post/aa_authors/argiris/gia-to-xorio-apo-tote-3/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xoriopalio.github.io/post/gia-to-xorio-apo-tote-2/</loc>
+    <loc>https://xoriopalio.github.io/post/aa_authors/argiris/gia-to-xorio-apo-tote-4/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xoriopalio.github.io/post/gia-to-xorio-apo-tote-3/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/post/gia-to-xorio-apo-tote-4/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/post/gia-to-xorio-apo-tote-5/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/post/liga-logia-gia-argiris-g/</loc>
+    <loc>https://xoriopalio.github.io/post/aa_authors/argiris/gia-to-xorio-apo-tote-5/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/post/vivlia-2024/</loc>
@@ -136,12 +148,6 @@
   </url><url>
     <loc>https://xoriopalio.github.io/post/ta-ypsomata/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/post/hugo-tricks/</loc>
-    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/tags/test/</loc>
-    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/tags/%CE%BC%CF%85%CE%B6%CE%AE%CE%B8%CF%81%CE%B1/</loc>
     <lastmod>2023-05-25T00:00:00+00:00</lastmod>
@@ -1037,7 +1043,7 @@
     <loc>https://xoriopalio.github.io/post/random/</loc>
     <lastmod>2017-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xoriopalio.github.io/post/agrotika/adriana/</loc>
+    <loc>https://xoriopalio.github.io/post/adriana/</loc>
     <lastmod>2017-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/tags/%CE%B1%CE%BD%CF%84%CF%81%CE%B9%CE%AC%CE%BD%CE%BD%CE%B1/</loc>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on Το Χωριό Παλιό</title>
+    <link>https://xoriopalio.github.io/tags/dev/</link>
+    <description>Recent content in dev on Το Χωριό Παλιό</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xoriopalio.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo tricks</title>
+      <link>https://xoriopalio.github.io/post/hugo-tricks/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xoriopalio.github.io/post/hugo-tricks/</guid>
+      <description>Στο συγκεκριμένο άρθρο θα συγκεντρώνω πληροφορίες σχετικά με το αγαπημενο Hugo, org-mode, emacs και γενικά περί του ιστότοπου και την ανάπτυξη αυτού.&#xA;C-c C-, ## org-insert-structure-template :EXPORT_OPTIONS: toc:nil {{&amp;amp;lt; imgur id=&amp;quot;vRbDiHJ&amp;quot; &amp;amp;gt;}} {{&amp;amp;lt tweet user=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot;&amp;amp;gt}} { {&amp;lt; tweet user=&amp;quot;xoriopalio&amp;quot; id=&amp;quot;&amp;quot;&amp;gt;}} &amp;lt;figure&amp;gt; &amp;lt;a href=&amp;quot;https://unsplash.com/photos/purple-petaled-flowers-0ZxdAGG4aWU&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&amp;amp;w=1976&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;quot; height=&amp;quot;600&amp;quot; widht=&amp;quot;&amp;quot;300&amp;quot;&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;/figure&amp;gt; author = &amp;quot;Argiris_G&amp;quot; author = &amp;ldquo;ArgirisG&amp;rdquo;&#xA;sgsdgdsg&#xA;Details&#xA;This is the details title (click) This is the content (hidden until clicked).</description>
+    </item>
+  </channel>
+</rss>
