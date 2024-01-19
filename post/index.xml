@@ -13,7 +13,14 @@
       <link>https://xoriopalio.github.io/post/cristiano-ronaldo/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/cristiano-ronaldo/</guid>
-      <description>pic.twitter.com/v0Fn892hmA&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 18, 2024 Όνομα Μητρός: Μπάγια - Φρούσια&#xA;Όνομα Πατρός: Τζόννυ το Ροκαμπίλλι&#xA;Ημερομηνία Γέννησης: 20.03.2023&#xA;Αδέρφια: Μέσι&#xA;[2024-01-18 Πεμ]:Σημάδεψε! Γύρισα από Πρέβεζα σήμερα από την δουλειά και θέλησα να βγάλω λίγο τα γίδια για βοσκή. Κοιτάω την Κριστιάνο και τι να δώ. Τα μαστάρια της έχουν φουσκώσει. Η Κριστιάνο, η μικροκαμωμένη, η αδερφή του Μέσι θα γεννήσει. Συγκινήθηκα! Αϊντε Κριστιάνο και με ένα πόνο.</description>
+      <description>pic.twitter.com/v0Fn892hmA&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 18, 2024 Όνομα Μητρός Αμάλθεια Όνομα Πατρός Τζόννυ το Ροκαμπίλλι Ημερομηνία Γέννησης 17.02.2023 Αδέρφια Haaland Ημερολόγιο</description>
+    </item>
+    <item>
+      <title>Haaland</title>
+      <link>https://xoriopalio.github.io/post/haaland/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xoriopalio.github.io/post/haaland/</guid>
+      <description>pic.twitter.com/v0Fn892hmA&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 18, 2024 Όνομα Μητρός Αμάλθεια Όνομα Πατρός Τζόννυ το Ροκαμπίλλι Ημερομηνία Γέννησης 17.02.2023 Αδέρφια Haaland Ημερολόγιο&#xA;Latest {{ range first 5 .Data.Pages }} {{if eq .Type &#34;post&#34; }} {{ .Title }}, {{ .Date.Format &#34;02 Jan, 2006&#34; }} {{ end }} {{ end }} </description>
     </item>
     <item>
       <title>Hugo tricks</title>
