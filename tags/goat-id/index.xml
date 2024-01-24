@@ -13,14 +13,21 @@
       <link>https://xoriopalio.github.io/post/cristiano-ronaldo/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/cristiano-ronaldo/</guid>
-      <description>pic.twitter.com/v0Fn892hmA&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 18, 2024 Όνομα Μητρός Αμάλθεια Όνομα Πατρός Τζόννυ το Ροκαμπίλλι Ημερομηνία Γέννησης 17.02.2023 Αδέρφια Haaland Ημερολόγιο</description>
+      <description>pic.twitter.com/v0Fn892hmA&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 18, 2024 Όνομα Μητρός Μπάγια - Φρούσια Όνομα Πατρός Τζόννυ το Ροκαμπίλλι Ημερομηνία Γέννησης 20.03.2023 Αδέρφια Μέσι Ημερολόγιο&#xA;2024-01-19 Παρ: Γέννησε! Όλη αυτή λοιπόν η συγκίνηση που είχα χθές ήταν επείδη θα γεννούσε σήμερα η Χριστιάνα. Το ένιωσα. Τη όμορφη η φύση, ο κύκλος της ζώης, η απλότητα και το θάυμα μαζί. H ηλικία της 10 μηνών. Οπότε ζευγάρωσε σε ηλικία 5 μηνών από τον ξάδερφό της ηλικίας 6 μηνών.</description>
     </item>
     <item>
       <title>Haaland</title>
       <link>https://xoriopalio.github.io/post/haaland/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/haaland/</guid>
-      <description>pic.twitter.com/v0Fn892hmA&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 18, 2024 Όνομα Μητρός Αμάλθεια Όνομα Πατρός Τζόννυ το Ροκαμπίλλι Ημερομηνία Γέννησης 17.02.2023 Αδέρφια Haaland Ημερολόγιο&#xA;Latest {{ range first 5 .Data.Pages }} {{if eq .Type &#34;post&#34; }} {{ .Title }}, {{ .Date.Format &#34;02 Jan, 2006&#34; }} {{ end }} {{ end }} </description>
+      <description>pic.twitter.com/1OUbqwwi9B&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 19, 2024 Όνομα Μητρός Αμάλθεια Όνομα Πατρός Τζόννυ το Ροκαμπίλλι Ημερομηνία Γέννησης 17.02.2023 Αδέρφια Haaland Ημερολόγιο</description>
+    </item>
+    <item>
+      <title>Αμάλθεια</title>
+      <link>https://xoriopalio.github.io/post/amaltheia/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xoriopalio.github.io/post/amaltheia/</guid>
+      <description>The Childhood of Zeus by Jakob Jordaens pic.twitter.com/V2DLR2afD9&#xA;&amp;mdash; Xorio Palio 🌳🥕🌼🥦🐓🐐 (@xoriopalio) January 3, 2024 Όνομα Μητρός Άγνωστο Όνομα Πατρός Άγνωστο Ημερομηνία Γέννησης 2019 Αδέρφια &#39;Αγνωστο Καταγωγή MikeKor H Αλάμθεια και το κέρατό της. Το κέρας της αφθονίας. Κι αυτό γιατί πράγματι η γίδα δίνει αφθονία. Τρώγοντας κλαρί από πουρνάρι και κλαδέματα από ελιές, μπορεί να δώσει μισό τόνο γάλα το χρόνο. Παναγία μου!! Το όνομα της όμως, η πρώτη αίγα του αγροκτήματος, το πήρε για ήρθε να διαδεχθεί την Κατερίνα ώς τροφός του Αργύρη.</description>
     </item>
   </channel>
 </rss>
