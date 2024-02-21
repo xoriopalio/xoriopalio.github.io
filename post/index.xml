@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Το Χωριό Παλιό</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xoriopalio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Σκωταριά ala Balaoura</title>
+      <link>https://xoriopalio.github.io/post/skotaria-ala-balaoura/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xoriopalio.github.io/post/skotaria-ala-balaoura/</guid>
+      <description>How to confuse your liver...&#xA;Happy #ThirstyThursday #WIYG?#wine #winehumor #winetasting #humor #ThursdayMotivation pic.twitter.com/m9cubEpNUL&#xA;&amp;mdash; Palate Exposure (@PalateXposure) February 11, 2016 Ζαματάω Ξεπλένω Ψιλοκόβωμε μπαλταδάκι έτσι ώστε να μην το καταλαβαίνει ο Αργυράκος και να το τρώει μαζί με το ρύζι Σωτάρω με κρεμμύδι, σκόρδο δεντρολίβανο, αλάτι, πιπέρι, κουρκουμά. Σβήνω με κρασί Ριχνω ρύζι basmati (2 κούπες), λαχανικά (μαιντανό, λαψάνα, τσουκνίδα, δυόσμος) Νερό 4 κούπες και στοταψί που έχω αλύψει με λάδι Φούρνο για 40 λεπτά.</description>
+    </item>
     <item>
       <title>Η Κούμα</title>
       <link>https://xoriopalio.github.io/post/h-kouma/</link>
@@ -27,7 +34,7 @@
       <link>https://xoriopalio.github.io/post/opel-astra/</link>
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/opel-astra/</guid>
-      <description>Table of Contents Service info about service Manual Ημερολόγιο How To Reset Oil Service Light On Στοιχεία Αυτοκινήτου Στοιχεία Αδείας Οικονομικά Service 2024-02-21: 300.450 km, καινούργια λάστιχα, δίσκο - πλατό, δισκόφρενα info about service 5W-30 ή 5W-40 για τον χειμώνα&#xA;10W all season&#xA;20W summer&#xA;Capacity: 3.1 lt / 0.2&#xA;https://www.youtube.com/watch?v=tfNIRvoyrvU&#xA;https://www.youtube.com/watch?v=5fF5ewGVKJ4&#xA;Manual Παρόμοιο Μοντέλο: https://www.auto-data.net/en/opel-astra-h-caravan-1.3-cdti-90hp-2360 Manual: https://www.manua.ls/vauxhall/astra-2008/manual?p=2 Opel CDTi engine: https://www.autodoc.co.uk/info/cdti Common Rail: https://www.youtube.com/watch?v=Y7MMYTVsZUg Ημερολόγιο H αγορά του πρώτου μου αυτοκίνητου με συμμετοχή μεγαλύτερη του 50%.</description>
+      <description>Table of Contents Service info about service Manual Ημερολόγιο How To Reset Oil Service Light On Στοιχεία Αδείας Οικονομικά Service 2024-02-21: 300.450 km, καινούργια λάστιχα, δίσκο - πλατό, δισκόφρενα info about service 5W-30 ή 5W-40 για τον χειμώνα&#xA;10W all season&#xA;20W summer&#xA;Capacity: 3.1 lt / 0.2&#xA;https://www.youtube.com/watch?v=tfNIRvoyrvU&#xA;https://www.youtube.com/watch?v=5fF5ewGVKJ4&#xA;Manual Παρόμοιο Μοντέλο: https://www.auto-data.net/en/opel-astra-h-caravan-1.3-cdti-90hp-2360 Manual: https://www.manua.ls/vauxhall/astra-2008/manual?p=2 Opel CDTi engine: https://www.autodoc.co.uk/info/cdti Common Rail: https://www.youtube.com/watch?v=Y7MMYTVsZUg Ημερολόγιο H αγορά του πρώτου μου αυτοκίνητου με συμμετοχή μεγαλύτερη του 50%.</description>
     </item>
     <item>
       <title>podcast for Argiris</title>
@@ -139,7 +146,7 @@
       <link>https://xoriopalio.github.io/post/hugo-tricks/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://xoriopalio.github.io/post/hugo-tricks/</guid>
-      <description>Table of Contents Γενικά Table of Contents Στο συγκεκριμένο άρθρο θα συγκεντρώνω πληροφορίες σχετικά με το αγαπημενο Hugo, org-mode, emacs και γενικά περί του ιστότοπου και την ανάπτυξη αυτού.&#xA;Γενικά [ψωμί](https://xoriopalio.github.io/post/to-psomi/) C-c C-, ## org-insert-structure-template :EXPORT_OPTIONS: toc:nil {{&amp;amp;lt; imgur id=&amp;quot;vRbDiHJ&amp;quot; &amp;amp;gt;}} {{&amp;amp;lt tweet user=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot;&amp;amp;gt}} { {&amp;lt; tweet user=&amp;quot;xoriopalio&amp;quot; id=&amp;quot;&amp;quot;&amp;gt;}} &amp;lt;figure&amp;gt; &amp;lt;a href=&amp;quot;https://unsplash.com/photos/purple-petaled-flowers-0ZxdAGG4aWU&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&amp;amp;w=1976&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;quot; height=&amp;quot;600&amp;quot; widht=&amp;quot;&amp;quot;300&amp;quot;&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;/figure&amp;gt; author = &amp;quot;Argiris_G&amp;quot; Do a paste 【Ctrl+y】. Press 【Alt+y】 to swap the paste content from previous entry.</description>
+      <description>Table of Contents Γενικά Table of Contents Useful links Στο συγκεκριμένο άρθρο θα συγκεντρώνω πληροφορίες σχετικά με το αγαπημενο Hugo, org-mode, emacs και γενικά περί του ιστότοπου και την ανάπτυξη αυτού.&#xA;Γενικά [ψωμί](https://xoriopalio.github.io/post/to-psomi/) C-c C-, ## org-insert-structure-template :EXPORT_OPTIONS: toc:nil {{&amp;amp;lt; imgur id=&amp;quot;vRbDiHJ&amp;quot; &amp;amp;gt;}} {{&amp;amp;lt tweet user=&amp;quot;&amp;quot; id=&amp;quot;&amp;quot;&amp;amp;gt}} { {&amp;lt; tweet user=&amp;quot;xoriopalio&amp;quot; id=&amp;quot;&amp;quot;&amp;gt;}} &amp;lt;figure&amp;gt; &amp;lt;a href=&amp;quot;https://unsplash.com/photos/purple-petaled-flowers-0ZxdAGG4aWU&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&amp;amp;w=1976&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;quot; height=&amp;quot;600&amp;quot; widht=&amp;quot;&amp;quot;300&amp;quot;&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;/figure&amp;gt; author = &amp;quot;Argiris_G&amp;quot; Do a paste 【Ctrl+y】. Press 【Alt+y】 to swap the paste content from previous entry.</description>
     </item>
     <item>
       <title>Το γενεαλογικό δένδρο μας</title>
