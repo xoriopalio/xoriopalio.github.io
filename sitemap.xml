@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xoriopalio.github.io/tags/poetry/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xoriopalio.github.io/post/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/tags/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/%CE%B3%CE%BB%CF%85%CE%BA%CE%AC/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/%CE%BC%CE%B1%CE%B3%CE%B5%CE%B9%CF%81%CE%B9%CE%BA%CE%AE/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/%CF%80%CE%B1%CE%B3%CF%89%CF%84%CF%8C/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/post/pagoto-gala-augo/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xoriopalio.github.io/tags/poetry/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/post/theio-manos/</loc>
@@ -91,9 +103,6 @@
   </url><url>
     <loc>https://xoriopalio.github.io/tags/%CF%86%CF%85%CF%83%CE%B9%CE%BA%CE%AE/</loc>
     <lastmod>2024-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/tags/%CE%BC%CE%B1%CE%B3%CE%B5%CE%B9%CF%81%CE%B9%CE%BA%CE%AE/</loc>
-    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/post/skotaria-ala-balaoura/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
@@ -382,9 +391,6 @@
   </url><url>
     <loc>https://xoriopalio.github.io/post/ti-kaneis-otan-se-gyrofernei/</loc>
     <lastmod>2021-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xoriopalio.github.io/tags/%CE%B3%CE%BB%CF%85%CE%BA%CE%AC/</loc>
-    <lastmod>2021-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xoriopalio.github.io/post/milopita/</loc>
     <lastmod>2021-10-01T00:00:00+00:00</lastmod>
